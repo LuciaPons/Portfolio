@@ -60,9 +60,11 @@ function Projects() {
                     alt=""
                     className='
                     absolute
-                    top-0 left-1/2
+                    -top-1/2 md:top-0
+                    left-1/2
                     -translate-x-1/2
-                    h-[50px] w-[50vw]
+                    h-[20vh] md:h-[8vh] 
+                    w-[60vw] md:w-[50vw]
                     object-cover
                     drop-shadow-lg
                     z-10
@@ -75,7 +77,7 @@ function Projects() {
                 -translate-x-1/2 -translate-y-1/2
                 text-center
                 text-[var(--color-2)]
-                text-2xl md:text-3xl lg:text-4xl 
+                text-xl md:text-3xl lg:text-4xl 
                 font-semibold
                 z-20 pt-6
                 rotate-[-0.5deg]">

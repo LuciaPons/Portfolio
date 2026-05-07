@@ -65,7 +65,7 @@ export default function Home() {
                     src={colorPalette} 
                     alt="Paleta de colores del diseño del portfolio" 
                     className='
-                    w-[200px] md:w-[280px]
+                    w-[160px] md:w-[280px]
                     shadow-[0_10px_25px_rgba(0,0,0,0.3)]
                     rotate-[6deg]
                     rounded-lg
@@ -77,7 +77,8 @@ export default function Home() {
                     alt="Pin decorativo sobre la paleta de colores" 
                     className='
                     absolute
-                    top-6 -left-[2%]
+                    top-4 md:top-6 
+                    -left-[2%] 
                     -translate-x-1/3 -translate-y-1/3
                     w-20 md:w-15 
                     h-12 md:h-14

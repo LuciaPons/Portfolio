@@ -247,7 +247,7 @@ function Education() {
                     group
                     relative
                     bg-[#B7A99A]/70
-                    py-6 px-8
+                    py-6 px-6 md:px-8
                     border-4
                     rounded-lg
                     shadow-[0_10px_30px_rgba(0,0,0,0.25)]

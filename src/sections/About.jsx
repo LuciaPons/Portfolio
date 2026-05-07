@@ -68,11 +68,11 @@ function About() {
                 <div className="
                 my-2 md:my-6
                 w-full text-justify
-                space-y-2 md:space-y-4
-                text-sm md:text-base lg:text-lg
+                space-y-1 md:space-y-4
+                text-xs md:text-base lg:text-lg
                 text-[var(--color-3)]">
                     <h2 className='
-                    text-base md:text-lg lg:text-xl
+                    text-sm md:text-lg lg:text-xl
                     font-semibold'>
                         Acerca de mí:
                     </h2>

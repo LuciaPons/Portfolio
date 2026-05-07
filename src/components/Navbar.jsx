@@ -13,7 +13,12 @@ export default function Navbar() {
     const tabRefs = useRef({});
 
     const scrollTo = (id) => {
-        document.getElementById(id)?.scrollIntoView({
+        const el = document.getElementById(id);
+        if (!el) return;
+        const offset = 100;
+        const top = el.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({
+            top,
             behavior: "smooth",
         });
     };
@@ -62,14 +67,18 @@ export default function Navbar() {
         <header className="
         bg-[var(--color-bg-navbar)]
         pt-6 px-4 md:px-6
-        sticky top-0 z-50
-        ">
+        sticky top-0 z-50">
             <nav 
             aria-label="Navegación principal"
             className="
             flex items-end
             gap-4 md:gap-8
-            px-4">
+            px-8
+            overflow-x-auto
+            whitespace-nowrap
+            scrollbar-hide
+            scroll-smooth
+            scrollbar-thin">
                 {tabs.map((tab, index) => (
                 <a
                     key={tab.id}
@@ -79,7 +88,8 @@ export default function Navbar() {
                         scrollTo(tab.id);
                     }}
                     aria-current={active === tab.id ? "page" : undefined}
-                    className="relative "
+                    className="relative 
+                    flex-shrink-0"
                     style={{
                         zIndex: active === tab.id ? 50 : tabs.length - index
                     }}>
