@@ -30,11 +30,11 @@ function Projects() {
             <div className='
             relative
             flex justify-center items-center
-            h-[80px] md:h-[100px]'>
+            h-[14vh] md:h-[20vh]'>
                 <div className="
                 absolute
-                top-[35px]
-                left-[25%]
+                top-[24%] md:top-[35px]
+                left-[8%] md:left-[25%]
                 w-[30px] md:w-[120px] 
                 h-[16px]
                 bg-black/30
@@ -45,8 +45,8 @@ function Projects() {
                 " />
                 <div className="
                 absolute
-                top-[35px]
-                right-[25%]
+                top-[24%] md:top-[35px]
+                right-[8%] md:right-[25%]
                 w-[30px] md:w-[120px] 
                 h-[16px]
                 bg-black/30
@@ -64,7 +64,7 @@ function Projects() {
                     left-1/2
                     -translate-x-1/2
                     h-[20vh] md:h-[8vh] 
-                    w-[60vw] md:w-[50vw]
+                    w-[90vw] md:w-[50vw]
                     object-cover
                     drop-shadow-lg
                     z-10
@@ -73,14 +73,16 @@ function Projects() {
                     opacity-95' />
                 <h2 className="
                 absolute
-                left-1/2 top-[12%]
+                left-1/2 
+                top-0 md:top-[10%]
                 -translate-x-1/2 -translate-y-1/2
                 text-center
                 text-[var(--color-2)]
-                text-xl md:text-3xl lg:text-4xl 
+                text-base md:text-3xl lg:text-4xl 
                 font-semibold
                 z-20 pt-6
-                rotate-[-0.5deg]">
+                rotate-[-0.5deg]
+                whitespace-nowrap">
                     Proyectos Destacados
                 </h2>
             </div>
@@ -225,7 +227,7 @@ function Projects() {
                     React . Tailwind CSS . JavaScript
                 </p>
                 <a 
-                href=""
+                href="https://github.com/LuciaPons/Portfolio"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ver repositorio de Portfolio en GitHub"

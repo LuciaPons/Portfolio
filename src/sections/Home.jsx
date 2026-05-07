@@ -53,7 +53,7 @@ export default function Home() {
             </div>
             <div className='
             absolute
-            right-[-18px] md:right-[-20px]
+            right-[-26px] md:right-[-20px]
             top-[32%] md:top-[40%]
             -translate-y-1/2
             rotate-90

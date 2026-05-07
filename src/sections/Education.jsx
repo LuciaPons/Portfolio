@@ -239,8 +239,8 @@ function Education() {
                 <div className='
                 flex justify-center
                 w-auto
-                mt-20 mx-[8%]
-                py-8
+                mt-20 mx-4
+                py-8 px-4 
                 bg-[#DBC8B3]/70
                 rounded-xl'>
                     <div className="

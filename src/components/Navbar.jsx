@@ -20,6 +20,7 @@ export default function Navbar() {
         window.scrollTo({
             top,
             behavior: "smooth",
+            inline: "center",
         });
     };
 
@@ -52,6 +53,11 @@ export default function Navbar() {
                 width: el.offsetWidth,
                 transform: `translateX(${el.offsetLeft}px)`,
             });
+            el.scrollIntoView({
+                behavior: "smooth",
+                inline: "center",
+                block: "nearest",
+            });
         }
     },[active]);
 
@@ -82,6 +88,7 @@ export default function Navbar() {
                 {tabs.map((tab, index) => (
                 <a
                     key={tab.id}
+                    ref={(el) => (tabRefs.current[tab.id] = el)}
                     href={`#${tab.id}`}
                     onClick={(e) => {
                         e.preventDefault();

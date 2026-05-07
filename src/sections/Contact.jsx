@@ -37,7 +37,7 @@ function Contact() {
                     loading="lazy"
                     className='
                     absolute 
-                    min-w-[60%] max-w-[70%] md:min-w-[90%] lg:w-[80%]
+                    min-w-[60%] max-w-[88%] md:min-w-[90%] lg:w-[80%]
                     drop-shadow-xl
                     transition-all duration-300
                     group-hover:rotate-[2deg] '/>
