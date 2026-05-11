@@ -12,7 +12,7 @@ function Projects() {
             img: zonaLimite , 
             description: "Aplicación e-commerce desarrollada con React y Firebase, que incluye autenticación de usuarios, gestión de carrito y filtrado dinámico de productos. Implementa manejo de estado y navegación con React Router.", 
             tecnologies: "React . Firebase . JavaScript",
-            linkUrl: "",
+            linkUrl: "https://proyectoreact-sand.vercel.app/",
             linkIcon: linkIcon,
             githubUrl: "https://github.com/LuciaPons/proyectoreact", 
             githubIcon: github3Icon,
