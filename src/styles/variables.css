@@ -1,0 +1,35 @@
+:root {
+  /*Color Background*/
+  --bg-color: #dddbd9;
+
+  /*Color Navigation Folders*/
+  --color-folder-1: #f1e4d2;
+  --color-folder-2: #cbb093;
+  --color-folder-3: #a99886;
+  --color-folder-4: #98846e;
+  --color-folder-5: #7d6f60;
+
+  --color-base: #f3e6d4;
+  --color-1: #cbb093;
+  --color-2: #c18d66;
+  --color-3: #a4624d;
+  --color-4: #8d957e;
+
+  /*Color Text*/
+  --color-text-dark: #4b2d23;
+  --color-text-light: #f3e6d4;
+
+  /*Typography*/
+  --font-primary: "Jost", sans-serif;
+  --font-secondary: "Playfair Display", serif;
+  --font-write: "IBM Plex Mono", monospace;
+
+  /*Shadows*/
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  /*Radius*/
+  --radius-folder: 22px;
+
+  /*Heights*/
+  --navbar-height: 90px;
+}
