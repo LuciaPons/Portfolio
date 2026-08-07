@@ -5,10 +5,8 @@ export default function FolderNavigation() {
   return (
     <header
       className="
-        bg-(--bg-color)
-        h-[60px]"
-    >
-      <div className="bg-red-500 h-[50px]"></div>
-    </header>
+        bg-(--bg-page)
+        h-(--navbar-height)"
+    ></header>
   );
 }

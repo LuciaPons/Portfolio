@@ -18,9 +18,9 @@ function About() {
             absolute
             w-[80%] md:w-[90%] max-w-[900px]
             h-[370px] md:h-[400px]
-            bg-[var(--color-4)]
+            bg-(--color-4)
             rounded-lg
-            rotate-[-2deg]
+            -rotate-2
             translate-x-[-20px] 
             translate-y-[4px] md:translate-y-[10px]
             z-0
@@ -31,9 +31,9 @@ function About() {
             absolute
             w-[80%] md:w-[90%] max-w-[900px]
             h-[370px] md:h-[400px]
-            bg-[var(--color-2)]
+            bg-(--color-2)
             rounded-lg
-            rotate-[2deg]
+            rotate-2
             translate-x-[20px] 
             translate-y-[8px] md:translate-y-[20px]
             z-0
@@ -45,8 +45,8 @@ function About() {
             relative
             w-[80%] md:w-[90%] max-w-[900px]
             h-[350px]
-            bg-[var(--color-base)]
-            border-4 border-double border-[var(--color-4)]
+            bg-(--color-base)
+            border-4 border-double border-(--color-4)
             rounded-lg
             shadow-[0_8px_30px_rgba(0,0,0,0.2)]
             p-6
@@ -61,7 +61,7 @@ function About() {
                 -top-10 md:-top-20 left-1/2 
                 -translate-x-1/2
                 -translate-y-6
-                rotate-[-2deg]
+                -rotate-2
                 drop-shadow-[0_8px_30px_rgba(0,0,0,0.2)]
                 transition-all duration-300
                 group-hover:rotate-0"/>
@@ -70,7 +70,7 @@ function About() {
                 w-full text-justify
                 space-y-1 md:space-y-4
                 text-xs md:text-base lg:text-lg
-                text-[var(--color-3)]">
+                text-(--color-3)">
                     <h2 className='
                     text-sm md:text-lg lg:text-xl
                     font-semibold'>

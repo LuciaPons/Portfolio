@@ -77,7 +77,7 @@ function Projects() {
                 top-0 md:top-[10%]
                 -translate-x-1/2 -translate-y-1/2
                 text-center
-                text-[var(--color-2)]
+                text-(--color-2)
                 text-base md:text-3xl lg:text-4xl 
                 font-semibold
                 z-20 pt-6
@@ -132,22 +132,22 @@ function Projects() {
                             group-hover:scale-105"/>
                             <div className="
                             absolute inset-0
-                            bg-gradient-to-t from-white/70 to-transparent"/>
+                            bg-linear-to-t from-white/70 to-transparent"/>
                         </div>
                         <div className="
                         p-6
-                        border-t-2 border-[var(--color-2)]">
+                        border-t-2 border-(--color-2)">
                             <h3 className="
                             text-xl font-semibold 
                             mb-3
-                            text-[var(--color-3)]
+                            text-(--color-3)
                             opacity-90">
                                 {project.name}
                             </h3>
                             <p className="
                             text-sm md:text-base
                             mb-4
-                            text-[var(--color-text-dark)] opacity-90">
+                            text-(--color-text-dark) opacity-90">
                                 {project.description}
                             </p>
                             <div className='
@@ -155,7 +155,7 @@ function Projects() {
                             m-2'>
                                 <span className='
                                 text-base md:text-lg
-                                text-[var(--color-text-dark)]
+                                text-(--color-text-dark)
                                 opacity-80'>
                                     {project.tecnologies}
                                 </span>
@@ -204,25 +204,25 @@ function Projects() {
             bg-[#DBC8B3]/70
             rounded-xl
             shadow-xl
-            hover:rotate-[-1deg]
+            hover:-rotate-1
             transition-all
             duration-300'>
                 <h4 className="
                     text-lg font-semibold 
                     mb-3
-                    text-[var(--color-3)]
+                    text-(--color-3)
                     opacity-90">
                     Portfolio Personal
                 </h4>
                 <p className='
                 text-sm md:text-base
                 mb-4
-                text-[var(--color-text-dark)] opacity-90'>
+                text-(--color-text-dark) opacity-90'>
                     Portfolio SPA desarrollado con React y Tailwind CSS. Implementa navegación dinámica con IntersectionObserver, diseño responsive y componentes reutilizables enfocados en experiencia de usuario.
                 </p>
                 <p className='
                 text-sm md:text-base
-                text-[var(--color-text-dark)]
+                text-(--color-text-dark)
                 opacity-80'>
                     React . Tailwind CSS . JavaScript
                 </p>

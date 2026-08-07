@@ -1,9 +1,13 @@
 body {
-  background: #dddbd9;
-  font-family: "Jost", sans-serif;
+  background: var(--bg-page);
+
+  font-family: var(--font-body);
+
   overflow-x: hidden;
+
+  color: var(--text-primary);
 }
 
-.title {
-  font-family: "Playfair Display", serif;
+html {
+  scroll-behavior: smooth;
 }

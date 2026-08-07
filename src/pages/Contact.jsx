@@ -40,14 +40,14 @@ function Contact() {
                     min-w-[60%] max-w-[88%] md:min-w-[90%] lg:w-[80%]
                     drop-shadow-xl
                     transition-all duration-300
-                    group-hover:rotate-[2deg] '/>
+                    group-hover:rotate-2 '/>
                     <h2 className="
                     absolute
-                    text-[var(--color-1)]
+                    text-(--color-1)
                     text-5xl md:text-6xl lg:text-7xl xl:text-8xl 
                     font-medium
                     transition-all duration-300
-                    group-hover:rotate-[2deg]
+                    group-hover:rotate-2
                     ">
                         Contacto
                     </h2>
@@ -57,13 +57,13 @@ function Contact() {
                 md:basis-1/2 '>
                     <div className="
                     flex flex-col justify-center
-                    bg-[var(--color-3)]
+                    bg-(--color-3)
                     p-6 md:p-4 lg:p-10 
                     gap-2 md:gap-4 lg:gap-5
                     md:w-[80%] lg:w-[70%]
                     rounded-xl
                     shadow-[0_8px_30px_rgba(0,0,0,0.2)]
-                    text-[var(--color-base)]">
+                    text-(--color-base)">
                         {contacts.map((item) => (
                             <a
                             key={item.label} 
@@ -102,7 +102,7 @@ function Contact() {
                 </div>
             </section>
             <div className='
-            text-[var(--color-4)] 
+            text-(--color-4) 
             text-xs md:text-sm
             text-end
             p-4'>

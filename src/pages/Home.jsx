@@ -31,7 +31,7 @@ export default function Home() {
                     text-3xl md:text-5xl
                     font-semibold
                     font-playfair
-                    text-[var(--color-text-dark)]
+                    text-(--color-text-dark)
                     text-center
                     leading-none
                     drop-shadow-lg">
@@ -39,13 +39,13 @@ export default function Home() {
                     </h1>
                     <h2 className='
                     text-2xl md:text-4xl
-                    text-[var(--color-text-dark)]
+                    text-(--color-text-dark)
                     drop-shadow-lg'>
                         Lucía Pons
                     </h2>
                     <p className='
                     text-base md:text-xl
-                    text-[var(--color-text-dark)]
+                    text-(--color-text-dark)
                     drop-shadow-lg'>
                         Frontend Develover
                     </p>
@@ -67,18 +67,18 @@ export default function Home() {
                     className='
                     w-[160px] md:w-[280px]
                     shadow-[0_10px_25px_rgba(0,0,0,0.3)]
-                    rotate-[6deg]
+                    rotate-6
                     rounded-lg
                     opacity-90
                     transition-all duration-300 ease-out
-                    group-hover:rotate-[1deg]'/>
+                    group-hover:rotate-1'/>
                     <img 
                     src={pin1} 
                     alt="Pin decorativo sobre la paleta de colores" 
                     className='
                     absolute
                     top-4 md:top-6 
-                    -left-[2%] 
+                    left-[-2%] 
                     -translate-x-1/3 -translate-y-1/3
                     w-20 md:w-15 
                     h-12 md:h-14

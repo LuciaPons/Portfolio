@@ -59,7 +59,7 @@ function Education() {
             <div className="
             flex flex-col
             max-w-[90%] 
-            text-[var(--color-texto-1)]
+            text-(--color-texto-1)
             drop-shadow-xl
             p-2 
             m-6 md:m-4
@@ -81,7 +81,7 @@ function Education() {
                     <div className='
                     relative
                     z-10
-                    bg-[var(--color-1)]
+                    bg-(--color-1)
                     min-h-[300px]
                     w-auto lg:w-full
                     flex flex-col 
@@ -123,7 +123,7 @@ function Education() {
                             <h4 className='
                             pb-4
                             font-sm md:font-base
-                            text-[var(--color-3)]
+                            text-(--color-3)
                             '>
                                 Tecnologías
                             </h4>
@@ -139,9 +139,9 @@ function Education() {
                                 transition
                                 ">
                                     <span className='
-                                    absolute -left-[20px]
+                                    absolute left-[-20px]
                                     w-2 h-2
-                                    bg-[var(--color-3)]
+                                    bg-(--color-3)
                                     rounded-full
                                     transition-all duration-300
                                     group-hover:scale-125
@@ -166,7 +166,7 @@ function Education() {
                             <h4 className='
                             pb-4
                             font-small md:font-medium
-                            text-[var(--color-3)]
+                            text-(--color-3)
                             '>
                                 Herramientas
                             </h4>
@@ -181,9 +181,9 @@ function Education() {
                                 font-small md:font-medium
                                 transition'>
                                     <span className='
-                                    absolute -left-[20px]
+                                    absolute left-[-20px]
                                     w-2 h-2
-                                    bg-[var(--color-3)]
+                                    bg-(--color-3)
                                     rounded-full
                                     transition-all duration-300
                                     group-hover:scale-125
@@ -206,7 +206,7 @@ function Education() {
                             <h4 className='
                             pb-4
                             font-small md:font-medium
-                            text-[var(--color-3)]
+                            text-(--color-3)
                             '>
                                 Idiomas
                             </h4>
@@ -221,9 +221,9 @@ function Education() {
                                 font-small md:font-medium
                                 transition'>
                                     <span className='
-                                    absolute -left-[20px]
+                                    absolute left-[-20px]
                                     w-2 h-2
-                                    bg-[var(--color-3)]
+                                    bg-(--color-3)
                                     rounded-full
                                     transition-all duration-300
                                     group-hover:scale-125
@@ -251,8 +251,8 @@ function Education() {
                     border-4
                     rounded-lg
                     shadow-[0_10px_30px_rgba(0,0,0,0.25)]
-                    rotate-[-2deg]
-                    hover:rotate-[2deg]
+                    -rotate-2
+                    hover:rotate-2
                     transition-all duration-300">
                         <img 
                         src={pin1}
@@ -284,7 +284,7 @@ function Education() {
             <div className="
             flex flex-col 
             gap-2 md:gap-6
-            bg-[var(--color-4)]
+            bg-(--color-4)
             py-6 px-10 
             lg:p-20 xl:p-10
             m-6 md:mr-8 md:mt-6
@@ -293,18 +293,18 @@ function Education() {
                     <h3 className="
                     text-center 
                     text-lg sm:text-2xl md:text-3xl
-                    text-[var(--color-base)] 
+                    text-(--color-base) 
                     font-playfair">
                         EDUCACIÓN
                     </h3>
                     <ul className="
-                    text-[var(--color-base)]
+                    text-(--color-base)
                     mt-7">
                         {courses.map((course) => {
                             const isOpen = activeCourse === course.name;
                             return (
                                 <li key={course.name} className='
-                                bg-white/10 backdrop-blur-sm
+                                bg-white/10 backdrop-blur-xs
                                 border-b border-white/10 
                                 rounded-lg 
                                 px-4 
@@ -340,7 +340,7 @@ function Education() {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             aria-label={`Ver certificado de ${course.name}`}
-                                            className="underline hover:text-[var(--color-3)] transition">
+                                            className="underline hover:text-(--color-3) transition">
                                                 Ver Certificado
                                             </a>
                                         </div>
@@ -352,7 +352,7 @@ function Education() {
                 
                 <div>
                     <h4 className='
-                    text-[var(--color-base)]
+                    text-(--color-base)
                     text-center
                     font-playfair
                     font-semibold
@@ -361,7 +361,7 @@ function Education() {
                         Experiencia previa a la programación
                     </h4>
                     <p className="
-                    text-[var(--color-base)]
+                    text-(--color-base)
                     text-sm/6 md:text-base/7 lg:text-lg/8
                     m-4
                     text-justify">

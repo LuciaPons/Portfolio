@@ -1,6 +1,6 @@
 :root {
   /*Color Background*/
-  --bg-color: #dddbd9;
+  --bg-page: #dddbd9;
 
   /*Color Navigation Folders*/
   --color-folder-1: #f1e4d2;
@@ -19,17 +19,38 @@
   --color-text-dark: #4b2d23;
   --color-text-light: #f3e6d4;
 
-  /*Typography*/
-  --font-primary: "Jost", sans-serif;
-  --font-secondary: "Playfair Display", serif;
-  --font-write: "IBM Plex Mono", monospace;
-
   /*Shadows*/
   --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-folder: 0 4px 12px rgb(0 0 0 /0.1);
+  --shadow-paper: 0 8px 18px rgb(0 0 0 /0.12);
+  --shadow-photo: 0 18px 35px rgb(0 0 0 /0.18);
 
   /*Radius*/
   --radius-folder: 22px;
+  --radius-paper: 6px;
+  --radius-photo: 4px;
 
   /*Heights*/
   --navbar-height: 90px;
+
+  /*Spacing*/
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+
+  /*Z-index*/
+  --z-navbar: 100;
+  --z-folder: 110;
+  --z-photo: 20;
+  --z-paper: 10;
+
+  /* Durations */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+
+  /* Easing */
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
 }
