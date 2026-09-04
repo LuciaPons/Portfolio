@@ -21,17 +21,21 @@
 
   /*Shadows*/
   --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.12);
-  --shadow-folder: 0 4px 12px rgb(0 0 0 /0.1);
+  --shadow-folder: 0 -14px 16px -1px rgba(0, 0, 0, 0.1);
   --shadow-paper: 0 8px 18px rgb(0 0 0 /0.12);
   --shadow-photo: 0 18px 35px rgb(0 0 0 /0.18);
 
   /*Radius*/
-  --radius-folder: 22px;
+  --radius-folder: 10px;
   --radius-paper: 6px;
   --radius-photo: 4px;
 
   /*Heights*/
-  --navbar-height: 90px;
+  --navbar-height: 100px;
+  --folder-step: 10px;
+  --tab-step: 250px;
+  --folder-body-height: 30px;
+  --folder-tab-height: 40px;
 
   /*Spacing*/
   --space-xs: 0.25rem;
@@ -41,8 +45,6 @@
   --space-xl: 2rem;
 
   /*Z-index*/
-  --z-navbar: 100;
-  --z-folder: 110;
   --z-photo: 20;
   --z-paper: 10;
 

@@ -1,27 +1,27 @@
 export const navigation = [
   {
+    id: 1,
     label: "Inicio",
     path: "/",
-    color: "--color-folder-1",
   },
   {
+    id: 2,
     label: "Educación",
     path: "/education",
-    color: "--color-folder-2",
   },
   {
+    id: 3,
     label: "Proyectos",
     path: "/projects",
-    color: "--color-folder-3",
   },
   {
+    id: 4,
     label: "Acerca de mí",
     path: "/about",
-    color: "--color-folder-4",
   },
   {
+    id: 5,
     label: "Contacto",
     path: "/contact",
-    color: "--color-folder-5",
   },
 ];
