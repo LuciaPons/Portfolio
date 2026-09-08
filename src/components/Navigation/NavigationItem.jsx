@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import texturaFolder from "../../assets/images/textura-beige-grainy.jpg";
+import texturaFolder from "../../assets/images/textura-beige.webp";
 
 const MotionNavLink = motion.create(NavLink);
 

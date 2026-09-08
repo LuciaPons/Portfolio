@@ -24,6 +24,7 @@
   --shadow-folder: 0 -14px 16px -1px rgba(0, 0, 0, 0.1);
   --shadow-paper: 0 8px 18px rgb(0 0 0 /0.12);
   --shadow-photo: 0 18px 35px rgb(0 0 0 /0.18);
+  --shadow-post-it: 4px 60px 18px rgb(0 0 0 /0.18);
 
   /*Radius*/
   --radius-folder: 10px;
