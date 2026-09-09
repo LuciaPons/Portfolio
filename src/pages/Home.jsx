@@ -3,7 +3,7 @@ import paperHome from "../assets/images/hoja-acuarela-home.webp";
 import polaroid1 from "../assets/images/foto-polaroid.webp";
 import polaroid2 from "../assets/images/foto-polaroid-2.webp";
 import clip1 from "../assets/images/clip-1.webp";
-import trozoPapel1 from "../assets/images/trozo-papel-7.webp";
+import trozoPapel1 from "../assets/images/trozo-papel-7.png";
 import stamp1 from "../assets/images/stamp-1.png";
 import stamp2 from "../assets/images/stamp-2.png";
 import { useState } from "react";
@@ -38,17 +38,16 @@ export default function Home() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <div
+        <img
+          src={paperHome}
+          alt=""
           className="
         absolute
         top-10 left-30
         w-[85%] h-full
+        object-fit
         -rotate-2
-        shadow-(--shadow-paper)
-        "
-          style={{
-            backgroundImage: `url(${paperHome})`,
-          }}
+        shadow-(--shadow-paper)"
         />
         <img
           src={clip1}
