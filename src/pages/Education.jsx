@@ -4,18 +4,18 @@ import { skills } from "../data/skills";
 import { tools } from "../data/tools";
 import { languages } from "../data/languages";
 import { courses } from "../data/education";
-import texturaFolder from "../assets/images/textura-beige.webp";
-import paperEducation from "../assets/images/papel-azul.jpg";
-import flecha from "../assets/images/flecha.png";
-import trozoPapel4 from "../assets/images/trozo-papel-4.png";
-import trozoPapel9 from "../assets/images/trozo-papel-9.png";
-import trozoPapel8 from "../assets/images/trozo-papel-8.png";
-import stamp2 from "../assets/images/stamp-3.png";
-import stamp3 from "../assets/images/stamp-5.png";
-import stamp4 from "../assets/images/stamp-4.png";
-import decor1 from "../assets/images/decor-1.png";
-import decor2 from "../assets/images/decor-4.png";
-import decor3 from "../assets/images/decor-5.png";
+import texturaFolder from "../assets/images/accesories/textura-beige.webp";
+import paperEducation from "../assets/images/accesories/papel-azul.jpg";
+import flecha from "../assets/images/accesories/flecha.png";
+import trozoPapel4 from "../assets/images/accesories/trozo-papel-4.png";
+import trozoPapel9 from "../assets/images/accesories/trozo-papel-9.png";
+import trozoPapel8 from "../assets/images/accesories/trozo-papel-8.png";
+import stamp2 from "../assets/images/accesories/stamp-3.png";
+import stamp3 from "../assets/images/accesories/stamp-5.png";
+import stamp4 from "../assets/images/accesories/stamp-4.png";
+import decor1 from "../assets/images/accesories/decor-1.png";
+import decor2 from "../assets/images/accesories/decor-4.png";
+import decor3 from "../assets/images/accesories/decor-5.png";
 
 function Education() {
   const [activePage, setActivePage] = useState(true);
@@ -34,7 +34,7 @@ function Education() {
     <section
       className="
       relative
-      h-full
+      h-full w-full
       bg-(--color-folder-2)
       overflow-hidden"
     >
@@ -53,30 +53,36 @@ function Education() {
       <button
         className="
       relative
-      top-50 left-2
+      top-50 left-0
       rotate-180
-      z-30"
+      z-30
+      cursor-pointer
+      transition-all duration-300
+      hover:scale-107"
         onClick={handleClick}
       >
         <img
           src={flecha}
           alt=""
           className="
-        w-20 h-15"
+        w-30 h-15"
         />
       </button>
       <button
         className="
       relative
-      top-50 left-340
-      z-30"
+      top-50 left-320
+      z-30
+      cursor-pointer
+      transition-all duration-300
+      hover:scale-107"
         onClick={handleClick}
       >
         <img
           src={flecha}
           alt=""
           className="
-        w-20 h-15"
+        w-30 h-15"
         />
       </button>
       <motion.div

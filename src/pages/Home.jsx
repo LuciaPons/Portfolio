@@ -1,11 +1,11 @@
-import texturaFolder from "../assets/images/textura-beige.webp";
-import paperHome from "../assets/images/hoja-acuarela-home.webp";
-import polaroid1 from "../assets/images/foto-polaroid.webp";
-import polaroid2 from "../assets/images/foto-polaroid-2.webp";
-import clip1 from "../assets/images/clip-1.webp";
-import trozoPapel1 from "../assets/images/trozo-papel-7.png";
-import trozoPapel10 from "../assets/images/trozo-papel-10.png";
-import decor2 from "../assets/images/decor-2.png";
+import texturaFolder from "../assets/images/accesories/textura-beige.webp";
+import paperHome from "../assets/images/accesories/hoja-acuarela-home.webp";
+import polaroid1 from "../assets/images/accesories/foto-polaroid.webp";
+import polaroid2 from "../assets/images/accesories/foto-polaroid-2.webp";
+import clip1 from "../assets/images/accesories/clip-1.webp";
+import trozoPapel1 from "../assets/images/accesories/trozo-papel-7.png";
+import trozoPapel10 from "../assets/images/accesories/trozo-papel-10.png";
+import decor2 from "../assets/images/accesories/decor-2.png";
 import { useState } from "react";
 import { motion } from "motion/react";
 
