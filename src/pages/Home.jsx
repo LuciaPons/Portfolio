@@ -4,8 +4,8 @@ import polaroid1 from "../assets/images/foto-polaroid.webp";
 import polaroid2 from "../assets/images/foto-polaroid-2.webp";
 import clip1 from "../assets/images/clip-1.webp";
 import trozoPapel1 from "../assets/images/trozo-papel-7.png";
-import stamp1 from "../assets/images/stamp-1.png";
-import stamp2 from "../assets/images/stamp-2.png";
+import trozoPapel10 from "../assets/images/trozo-papel-10.png";
+import decor2 from "../assets/images/decor-2.png";
 import { useState } from "react";
 import { motion } from "motion/react";
 
@@ -43,8 +43,8 @@ export default function Home() {
           alt=""
           className="
         absolute
-        top-10 left-30
-        w-[85%] h-full
+        top-8 left-10
+        w-[95%] h-full
         object-fit
         -rotate-2
         shadow-(--shadow-paper)"
@@ -54,16 +54,17 @@ export default function Home() {
           alt=""
           className="
           absolute
-          top-1 right-75
+          bottom-125 right-75
           z-40
-          w-30 h-25
-          rotate-5"
+          w-35 h-25
+          "
         />
         <div
           className="
         absolute
         top-10 right-70
-        w-80 h-150"
+        w-80 h-150
+        cursor-pointer"
           onClick={() => setTopPhoto((prev) => (prev === 1 ? 2 : 1))}
         >
           <img
@@ -90,17 +91,19 @@ export default function Home() {
         <div
           className="
         relative
-        top-18 left-80
-        w-100 h-400
-        rotate-2"
+        top-20 left-80
+        w-90 h-400
+        rotate-2
+        z-10
+        cursor-default"
         >
           <p
             className="
             absolute
-            top-63 left-22
+            top-60 left-22
             font-heading
             font-semibold
-            text-2xl
+            text-3xl
             text-(--color-text-dark)"
           >
             Lucía Pons
@@ -108,10 +111,10 @@ export default function Home() {
           <p
             className="
           absolute
-          top-72 left-25
+          top-72 left-20
           font-heading
           font-semibold
-          text-xl
+          text-2xl
           text-(--color-text-dark)"
           >
             Frontend Developer
@@ -120,24 +123,28 @@ export default function Home() {
             src={trozoPapel1}
             alt=""
             className="
-          shadow-(--shadow-post-it)"
+          shadow-(--shadow-post-it)
+          "
           />
         </div>
         <img
-          src={stamp1}
+          src={trozoPapel10}
           alt=""
           className="
-        absolute
-        bottom-5 right-30
-        w-80 h-60"
+          absolute
+          top-14 left-130
+          w-80 h-140
+          -rotate-4"
         />
         <img
-          src={stamp2}
+          src={decor2}
           alt=""
           className="
         absolute
-        top-15 left-40
-        w-70 h-50"
+        top-80 left-40
+        w-50 h-75
+        -rotate-20
+        hover:-translate-y-2"
         />
       </motion.div>
     </section>
