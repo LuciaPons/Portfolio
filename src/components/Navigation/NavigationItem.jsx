@@ -6,7 +6,7 @@ import texturaFolder from "../../assets/images/accesories/textura-beige.webp";
 
 const MotionNavLink = motion.create(NavLink);
 
-const tabOffsets = ["40px", "35px", "18px", "34px", "22px"];
+const tabOffsets = ["90px", "85px", "68px", "84px", "72px"];
 
 export default function NavigationItem({
   tab,
@@ -56,6 +56,8 @@ export default function NavigationItem({
             rounded-t-(--radius-folder)
             text-center
             font-mono
+            text-(--color-text-dark)
+            font-semibold
             shadow-(--shadow-folder)
             overflow-hidden
           "
@@ -77,7 +79,7 @@ export default function NavigationItem({
               backgroundRepeat: "repeat",
             }}
           />
-          <span className={isActive ? "font-semibold" : ""}>{tab.label}</span>
+          <span className={isActive ? "font-bold" : ""}>{tab.label}</span>
         </div>
 
         <div
