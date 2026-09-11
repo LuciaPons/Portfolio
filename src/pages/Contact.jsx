@@ -1,96 +1,77 @@
-import phoneIcon from "../assets/icons/icon-phone.png";
-import mailIcon from "../assets/icons/icon-mail.png";
-import github2Icon from "../assets/icons/icon-github-2.png";
-import linkedinIcon from "../assets/icons/icon-linkedin.png";
-import fondo2 from "../assets/img/Fondo-2.png";
+import { contacts } from "../data/contacts";
+import texturaFolder from "../assets/images/accesories/textura-beige.webp";
+
+import trozoPapel12 from "../assets/images/accesories/trozo-papel-12.png";
+import trozoPapel13 from "../assets/images/accesories/trozo-papel-13.png";
+import { motion } from "motion/react";
 
 function Contact() {
-  const contacts = [
-    {
-      label: "Teléfono",
-      value: "+598 097095325",
-      href: "tel:+598097095325",
-      icon: phoneIcon,
-    },
-    {
-      label: "Email",
-      value: "luciaponss@hotmail.com",
-      href: "mailto:luciaponss@hotmail.com",
-      icon: mailIcon,
-    },
-    {
-      label: "GitHub",
-      value: "@LuciaPons",
-      href: "https://github.com/LuciaPons",
-      icon: github2Icon,
-    },
-    {
-      label: "LinkedIn",
-      value: "Lucía Pons",
-      href: "https://www.linkedin.com/in/lucia-pons-401961350",
-      icon: linkedinIcon,
-    },
-  ];
-
   return (
-    <>
-      <section
+    <section
+      className="
+      h-full
+      bg-(--color-folder-5)
+      overflow-hidden
+      flex flex-col md:flex-row
+      gap-8 md:gap-4
+      "
+    >
+      <div
         className="
-            bg-(--color-folder-5)
-            flex flex-col md:flex-row
-            gap-8 md:gap-4
-            min-h-[50vh]
-            "
+      absolute
+      inset-0
+      opacity-25
+      pointer-events-none"
+        style={{
+          backgroundImage: `url(${texturaFolder})`,
+          backgroundRepeat: "repeat",
+        }}
+      />
+      <motion.div
+        className="
+      relative
+      h-full w-full"
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <div
           className="
-                relative group
-                flex 
-                md:basis-1/2 
-                justify-center items-center
-                min-h-[30vh]
-                "
+        absolute
+        top-0 left-0
+        w-full h-300"
         >
           <img
-            src={fondo2}
+            src={trozoPapel13}
             alt=""
-            aria-hidden="true"
-            loading="lazy"
             className="
-                    absolute 
-                    min-w-[60%] max-w-[88%] md:min-w-[90%] lg:w-[80%]
-                    drop-shadow-xl
-                    transition-all duration-300
-                    group-hover:rotate-2 "
+        absolute
+        top-18 left-100
+        w-230 h-300
+        object-fit
+        -rotate-4
+        shadow-(--shadow-paper)
+        opacity-80"
           />
-          <h2
+          <img
+            src={trozoPapel12}
+            alt=""
             className="
-                    absolute
-                    text-(--color-1)
-                    text-5xl md:text-6xl lg:text-7xl xl:text-8xl 
-                    font-medium
-                    transition-all duration-300
-                    group-hover:rotate-2
-                    "
-          >
-            Contacto
-          </h2>
-        </div>
-        <div
-          className="
-                flex justify-center
-                md:basis-1/2 "
-        >
+        absolute
+        top-4 left-30
+        w-230 h-300
+        object-fit
+        rotate-2
+        shadow-(--shadow-paper)"
+          />
           <div
             className="
-                    flex flex-col justify-center
-                    bg-(--color-3)
-                    p-6 md:p-4 lg:p-10 
-                    gap-2 md:gap-4 lg:gap-5
-                    md:w-[80%] lg:w-[70%]
-                    rounded-xl
-                    shadow-[0_8px_30px_rgba(0,0,0,0.2)]
-                    text-(--color-base)"
+          absolute
+          top-30 left-50
+          rotate-2
+          p-4 w-90
+          border-2 border-(--color-3)
+          rounded-lg"
           >
             {contacts.map((item) => (
               <a
@@ -99,29 +80,29 @@ function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                            group flex items-center 
-                            gap-4 md:gap-2 lg:gap-4
-                            px-4 py-3 rounded-lg
-                            transition-all duration-300
-                            hover:bg-white/10
-                            hover:-translate-y-1
-                            hover:shadow-[0_6px_15px_rgba(0,0,0,0.25)]"
+              group flex items-center 
+              gap-4 md:gap-2 lg:gap-4
+              px-4 py-3 rounded-lg
+              transition-all duration-300
+              hover:bg-white/10
+              hover:-translate-y-1
+              hover:shadow-[0_6px_15px_rgba(0,0,0,0.25)]"
               >
                 <img
                   src={item.icon}
                   alt={item.label}
                   className="
-                                w-6 h-6
-                                transition duration-300
-                                group-hover:scale-110
-                                group-hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.6)]"
+                w-6 h-6
+                transition duration-300
+                group-hover:scale-110
+                group-hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.6)]"
                 />
                 <div className="flex flex-col">
                   <span className="text-sm opacity-70">{item.label}</span>
                   <span
                     className="
-                                    font-medium
-                                    sm:text-base md:text-sm lg:text-base"
+                  font-medium
+                  sm:text-base md:text-sm lg:text-base"
                   >
                     {item.value}
                   </span>
@@ -130,8 +111,8 @@ function Contact() {
             ))}
           </div>
         </div>
-      </section>
-      <div
+      </motion.div>
+      {/* <div
         className="
             text-(--color-4) 
             text-xs md:text-sm
@@ -144,8 +125,8 @@ function Contact() {
           Creado en Visual Studio Code con React JS y Tailwind CSS. <br />
           Deployed en Vercel
         </p>
-      </div>
-    </>
+      </div> */}
+    </section>
   );
 }
 
