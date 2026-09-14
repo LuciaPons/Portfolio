@@ -65,7 +65,8 @@ function Education() {
           src={flecha}
           alt=""
           className="
-        w-30 h-15"
+        w-30 h-15
+        -rotate-12"
         />
       </button>
       <button
@@ -82,7 +83,8 @@ function Education() {
           src={flecha}
           alt=""
           className="
-        w-30 h-15"
+        w-30 h-15
+        -rotate-8"
         />
       </button>
       <motion.div
@@ -133,7 +135,7 @@ function Education() {
             top-20 left-170
             font-mono
             font-semibold
-            text-(--color-text-dark)
+            text-(--color-text-vivid)
             text-2xl 
             drop-shadow-lg"
             >
@@ -160,17 +162,18 @@ function Education() {
             <div
               className="
                 absolute
-                top-14 left-30
-                w-110 h-110
-                -rotate-3
+                top-14 left-34
+                w-100 h-100
+                rotate-4
                 z-10
-                shadow-(--shadow-post-it)"
+                "
             >
               <img
                 src={trozoPapel4}
                 alt=""
                 className="
-                  w-110 h-110"
+                  w-100 h-100
+                  shadow-(--shadow-post-it)"
               />
               <ul
                 className="
@@ -181,13 +184,14 @@ function Education() {
                   w-auto h-auto
                   m-2 md:m-4
                   py-4
-                  font-body"
+                  font-body
+                  text-(--color-text-vivid)"
               >
                 <h4
                   className="
                     pb-4 px-8
                     text-lg
-                    text-(--color-3)"
+                    "
                 >
                   Tecnologías
                 </h4>
@@ -245,15 +249,15 @@ function Education() {
                   w-auto h-auto
                   m-2 md:m-6
                   py-4
-                  font-heading"
+                  font-heading
+                  font-semibold
+                  text-(--color-text-dark)"
               >
                 <h4
                   className="
                     pb-4 px-8
                     text-lg
-                    font-semibold
-                    text-(--color-text-dark)
-                    font-body"
+                    italic"
                 >
                   Herramientas
                 </h4>
@@ -265,7 +269,6 @@ function Education() {
                       relative 
                       flex items-center
                       gap-4 mb-4 ml-2
-                      font-small md:font-medium
                       transition"
                   >
                     <span
@@ -278,7 +281,11 @@ function Education() {
                         group-hover:scale-125
                         group-hover:shadow-[0_0_6px_rgba(164,93,68,0.8),0_0_12px_rgba(164,93,68,0.6)]"
                     />
-                    <img src={tool.icon} alt={tool.name} className="w-6 h-6" />
+                    <img
+                      src={tool.icon}
+                      alt={tool.name}
+                      className="w-6 h-6 opacity-80"
+                    />
                     <span>{tool.name}</span>
                   </li>
                 ))}
@@ -295,7 +302,8 @@ function Education() {
                 src={trozoPapel8}
                 alt=""
                 className="
-                w-100 h-100"
+                w-100 h-100
+                shadow-(--shadow-side-post-it)"
               />
               <img
                 src={stamp2}
@@ -404,8 +412,8 @@ function Education() {
               alt=""
               className="
               absolute
-              top-14 left-18
-              w-30 h-30
+              top-14 left-24
+              w-25 h-25
               rotate-24
               z-40"
             />
@@ -415,7 +423,7 @@ function Education() {
               className="
               absolute
               bottom-8 right-24
-              w-45 h-25
+              w-45 h-20
               -rotate-34
               z-40"
             />

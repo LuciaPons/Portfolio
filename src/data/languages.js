@@ -1,4 +1,4 @@
-import languageIcon from "../assets/icons/icon-language.png";
+import languageIcon from "../assets/icons/icon-language.svg";
 
 export const languages = [
   { name: "Español", level: "Nativo", icon: languageIcon },

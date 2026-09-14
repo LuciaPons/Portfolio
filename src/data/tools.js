@@ -1,7 +1,7 @@
-import gitIcon from "../assets/icons/icon-git.png";
-import gitHub1Icon from "../assets/icons/icon-github-1.png";
-import viteIcon from "../assets/icons/icon-vite.png";
-import firebaseIcon from "../assets/icons/icon-firebase.png";
+import gitIcon from "../assets/icons/git-icon.svg";
+import gitHub1Icon from "../assets/icons/github-icon-1.svg";
+import viteIcon from "../assets/icons/vite-icon.svg";
+import firebaseIcon from "../assets/icons/firebase-icon.svg";
 
 export const tools = [
   { name: "Git", icon: gitIcon },
