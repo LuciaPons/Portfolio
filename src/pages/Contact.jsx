@@ -41,37 +41,54 @@ function Contact() {
         top-0 left-0
         w-full h-300"
         >
+          <p
+            className="
+            text-(--color-text-vivid)
+            text-end
+            text-sm
+            font-body
+            absolute
+            top-60 right-50
+            z-10
+            -rotate-4"
+          >
+            Portfolio diseñado con Figma.
+            <br />
+            Creado en Visual Studio Code con React JS, <br />
+            Tailwind CSS y Motion.
+            <br />
+            Deployed en Vercel
+          </p>
           <img
             src={trozoPapel13}
             alt=""
             className="
-        absolute
-        top-18 left-100
-        w-230 h-300
-        object-fit
-        -rotate-4
-        shadow-(--shadow-paper)
-        opacity-80"
+            absolute
+            top-18 right-10
+            w-230 h-300
+            object-fit
+            -rotate-4
+            shadow-(--shadow-paper)
+            opacity-80"
           />
           <img
             src={trozoPapel12}
             alt=""
             className="
-        absolute
-        top-4 left-30
-        w-230 h-300
-        object-fit
-        rotate-2
-        shadow-(--shadow-paper)"
+            absolute
+            top-6 left-20
+            w-230 h-300
+            object-fit
+            rotate-2
+            shadow-(--shadow-paper)"
           />
           <div
             className="
           absolute
-          top-30 left-50
+          top-30 left-40
           rotate-2
-          p-4 w-90
-          border-2 border-(--color-3)
-          rounded-lg"
+          py-6 pl-20 
+          w-90"
           >
             {contacts.map((item) => (
               <a
@@ -80,13 +97,14 @@ function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-              group flex items-center 
-              gap-4 md:gap-2 lg:gap-4
-              px-4 py-3 rounded-lg
-              transition-all duration-300
-              hover:bg-white/10
-              hover:-translate-y-1
-              hover:shadow-[0_6px_15px_rgba(0,0,0,0.25)]"
+                group 
+                flex 
+                items-center
+                text-(--color-text-dark) 
+                gap-4
+                px-4 py-3 
+                transition duration-300
+                group-hover:scale-110"
               >
                 <img
                   src={item.icon}
@@ -97,7 +115,12 @@ function Contact() {
                 group-hover:scale-110
                 group-hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.6)]"
                 />
-                <div className="flex flex-col">
+                <div
+                  className="
+                flex flex-col
+                transition duration-300
+                group-hover:scale-105"
+                >
                   <span className="text-sm opacity-70">{item.label}</span>
                   <span
                     className="
@@ -112,20 +135,6 @@ function Contact() {
           </div>
         </div>
       </motion.div>
-      {/* <div
-        className="
-            text-(--color-4) 
-            text-xs md:text-sm
-            text-end
-            p-4"
-      >
-        <p>
-          Portfolio diseñado con Whimsical.
-          <br />
-          Creado en Visual Studio Code con React JS y Tailwind CSS. <br />
-          Deployed en Vercel
-        </p>
-      </div> */}
     </section>
   );
 }
