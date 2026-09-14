@@ -4,8 +4,9 @@ import polaroid1 from "../assets/images/accesories/foto-polaroid.webp";
 import polaroid2 from "../assets/images/accesories/foto-polaroid-2.webp";
 import clip1 from "../assets/images/accesories/clip-1.webp";
 import trozoPapel1 from "../assets/images/accesories/trozo-papel-7.png";
-import trozoPapel10 from "../assets/images/accesories/trozo-papel-10.png";
 import decor2 from "../assets/images/accesories/decor-2.png";
+import decor11 from "../assets/images/accesories/decor-11.png";
+import decor12 from "../assets/images/accesories/decor-15.png";
 import { useState } from "react";
 import { motion } from "motion/react";
 
@@ -43,6 +44,17 @@ export default function Home() {
           alt=""
           className="
         absolute
+        top-8 left-15
+        w-[95%] h-full
+        object-fit
+        rotate-2
+        shadow-(--shadow-paper)"
+        />
+        <img
+          src={paperHome}
+          alt=""
+          className="
+        absolute
         top-8 left-10
         w-[95%] h-full
         object-fit
@@ -73,21 +85,31 @@ export default function Home() {
             className={`
             absolute
             inset-0
-          w-80 h-120
-          shadow-(--shadow-photo)
-          ${topPhoto === 1 ? "z-20 -rotate-4" : "z-10 -rotate-3"}`}
+            w-80 h-120
+            shadow-(--shadow-photo)
+            ${topPhoto === 1 ? "z-20 -rotate-4" : "z-10 -rotate-3"}`}
           />
           <img
             src={polaroid2}
             alt=""
             className={`
-              absolute
-              inset-0
-          w-80 h-120
-          shadow-(--shadow-photo)
-          ${topPhoto === 2 ? "z-20 rotate-3" : "z-10 rotate-4"}`}
+            absolute
+            inset-0
+            w-80 h-120
+            shadow-(--shadow-photo)
+            ${topPhoto === 2 ? "z-20 rotate-3" : "z-10 rotate-8"}`}
           />
         </div>
+        <img
+          src={decor12}
+          alt=""
+          className="
+          absolute
+          top-6 right-12
+          w-70 h-70
+          opacity-70
+          -rotate-4"
+        />
         <div
           className="
         relative
@@ -100,7 +122,7 @@ export default function Home() {
           <p
             className="
             absolute
-            top-60 left-22
+            top-56 left-22
             font-heading
             font-semibold
             text-3xl
@@ -111,7 +133,7 @@ export default function Home() {
           <p
             className="
           absolute
-          top-72 left-20
+          top-72 left-18
           font-heading
           font-semibold
           text-2xl
@@ -128,13 +150,14 @@ export default function Home() {
           />
         </div>
         <img
-          src={trozoPapel10}
+          src={decor11}
           alt=""
           className="
           absolute
-          top-14 left-130
-          w-80 h-140
-          -rotate-4"
+          top-22 left-70
+          w-110 h-110
+          opacity-90
+          -rotate-3"
         />
         <img
           src={decor2}
