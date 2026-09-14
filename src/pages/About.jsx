@@ -2,13 +2,31 @@ import texturaFolder from "../assets/images/accesories/textura-beige.webp";
 import paperAbout from "../assets/images/accesories/papel-beige-doblado-1.jpg";
 import papelRayas from "../assets/images/accesories/papel-rayas.jpg";
 import clip4 from "../assets/images/accesories/clip-4.png";
+import clip1 from "../assets/images/accesories/clip-1.webp";
 import acuarelas from "../assets/images/accesories/img-acuarelas.jpg";
-import paper11 from "../assets/images/accesories/trozo-papel-11.png";
-import decor8 from "../assets/images/accesories/decor-8.png";
+import paper15 from "../assets/images/accesories/trozo-papel-15.png";
+/* import paper11 from "../assets/images/accesories/trozo-papel-11.png"; */
+/* import decor8 from "../assets/images/accesories/decor-8.png"; */
 import stamp3 from "../assets/images/accesories/stamp-3.png";
+import stamp5 from "../assets/images/accesories/stamp-5.png";
 import { motion } from "motion/react";
+import { useState, useEffect } from "react";
 
 function About() {
+  const [position, setPosition] = useState(0);
+
+  const text =
+    "Soy desarrolladora Frontend y me gusta transformar ideas en experiencias web que sean funcionales, dinámicas y agradables de usar. Trabajo principalmente con React y JavaScript, y disfruto especialmente de la parte visual: pensar cómo se organiza una interfaz, cómo se siente al interactuar con ella y cómo adaptarla a distintos dispositivos.\n\nMe gusta aprender haciendo, experimentar con nuevas herramientas y encontrar distintas formas de convertir una idea en algo concreto. Cada proyecto es una oportunidad para aprender algo nuevo, mejorar la forma en que trabajo y seguir construyendo una mirada más completa sobre el desarrollo web.\n\nAhora estoy buscando dar el próximo paso y formar parte de un equipo de desarrollo. Me interesa seguir aprendiendo, enfrentar nuevos desafíos y aportar todo lo que fui construyendo hasta ahora.";
+
+  useEffect(() => {
+    if (position < text.length) {
+      const timer = setTimeout(() => {
+        setPosition((prevPosition) => prevPosition + 1);
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [position]);
+
   return (
     <section
       className="
@@ -47,7 +65,7 @@ function About() {
         shadow-(--shadow-paper)"
         />
 
-        <img
+        {/* <img
           src={paper11}
           alt=""
           className="
@@ -56,18 +74,40 @@ function About() {
           w-90 h-90
           opacity-85
           -rotate-10"
-        />
-        <img
-          src={acuarelas}
-          alt=""
-          className="
+        /> */}
+        <span className="group">
+          <img
+            src={paper15}
+            alt=""
+            className="
             absolute
-            top-55 left-80
+            bottom-20 -left-14
+          w-140 h-90
+          -rotate-85
+          group-hover:-rotate-80"
+          />
+          <img
+            src={acuarelas}
+            alt=""
+            className="
+            absolute
+            bottom-30 -left-8
           w-90 h-60
-          opacity-90
-          rotate-6"
-        />
-        <img
+          -rotate-85
+          group-hover:-rotate-90"
+          />
+          <img
+            src={clip1}
+            alt=""
+            className="
+          absolute
+          bottom-30 -left-8
+          w-40 h-25
+          z-10
+          -rotate-95"
+          />
+        </span>
+        {/* <img
           src={decor8}
           alt=""
           className="
@@ -76,7 +116,7 @@ function About() {
           w-25 h-25
           opacity-85
           -rotate-16"
-        />
+        /> */}
         <div
           className="
           absolute
@@ -98,10 +138,20 @@ function About() {
             alt=""
             className="
           absolute
-          top-114 right-20
-          w-25 h-20
+          top-124 right-20
+          w-20 h-20
           z-10
           rotate-16"
+          />
+          <img
+            src={stamp5}
+            alt=""
+            className="
+          absolute
+          top-18 right-190
+          w-15 h-15
+          z-10
+          -rotate-25"
           />
           <img
             src={papelRayas}
@@ -114,15 +164,38 @@ function About() {
           />
           <div
             className="
+            w-full
           absolute
-          top-40 right-20
+          top-34 right-20
           px-14
           font-mono
-          text-(--color-text-dark)
-          text-justify
+          text-(--color-text-vivid)
+          text-start
           -rotate-2"
           >
             <p
+              className="
+              w-full
+            indent-4
+            pb-2
+            pl-18
+            whitespace-break-spaces"
+            >
+              {text.slice(0, position)}
+              <motion.span
+                animate={{ opacity: [0, 1] }}
+                transition={{
+                  duration: 0.4,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                  ease: "easeInOut",
+                }}
+              >
+                |
+              </motion.span>
+            </p>
+
+            {/* <p
               className="
               indent-4
               pb-2"
@@ -146,7 +219,7 @@ function About() {
               Enfocada en seguir mejorando mis habilidades, crecer
               profesionalmente dentro del desarrollo web e interesada en
               oportunidades donde pueda aportar y seguir aprendiendo en equipo.
-            </p>
+            </p> */}
           </div>
         </div>
       </motion.div>
