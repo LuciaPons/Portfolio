@@ -1,9 +1,8 @@
+import { motion } from "motion/react";
 import { contacts } from "../data/contacts";
 import texturaFolder from "../assets/images/accesories/textura-beige.webp";
-
-import trozoPapel12 from "../assets/images/accesories/trozo-papel-12.png";
-import trozoPapel13 from "../assets/images/accesories/trozo-papel-13.png";
-import { motion } from "motion/react";
+import paper8 from "../assets/images/accesories/paper-8.png";
+import paper9 from "../assets/images/accesories/paper-9.png";
 
 function Contact() {
   return (
@@ -60,7 +59,7 @@ function Contact() {
             Deployed en Vercel
           </p>
           <img
-            src={trozoPapel13}
+            src={paper9}
             alt=""
             className="
             absolute
@@ -72,7 +71,7 @@ function Contact() {
             opacity-80"
           />
           <img
-            src={trozoPapel12}
+            src={paper8}
             alt=""
             className="
             absolute

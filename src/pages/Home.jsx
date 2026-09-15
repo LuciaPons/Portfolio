@@ -1,14 +1,14 @@
-import texturaFolder from "../assets/images/accesories/textura-beige.webp";
-import paperHome from "../assets/images/accesories/hoja-acuarela-home.webp";
-import polaroid1 from "../assets/images/accesories/foto-polaroid.webp";
-import polaroid2 from "../assets/images/accesories/foto-polaroid-2.webp";
-import clip1 from "../assets/images/accesories/clip-1.webp";
-import trozoPapel1 from "../assets/images/accesories/trozo-papel-7.png";
-import decor2 from "../assets/images/accesories/decor-2.png";
-import decor11 from "../assets/images/accesories/decor-11.png";
-import decor12 from "../assets/images/accesories/decor-15.png";
 import { useState } from "react";
 import { motion } from "motion/react";
+import texturaFolder from "../assets/images/accesories/textura-beige.webp";
+import paperHome from "../assets/images/accesories/paper-home.webp";
+import polaroid1 from "../assets/images/accesories/polaroid-1.webp";
+import polaroid2 from "../assets/images/accesories/polaroid-2.webp";
+import clip1 from "../assets/images/accesories/clip-1.webp";
+import paper1 from "../assets/images/accesories/paper-1.png";
+import decor1 from "../assets/images/accesories/decor-1.png";
+import decor2 from "../assets/images/accesories/decor-2.png";
+import decor3 from "../assets/images/accesories/decor-3.png";
 
 export default function Home() {
   const [topPhoto, setTopPhoto] = useState(1);
@@ -101,7 +101,7 @@ export default function Home() {
           />
         </div>
         <img
-          src={decor12}
+          src={decor3}
           alt=""
           className="
           absolute
@@ -142,7 +142,7 @@ export default function Home() {
             Frontend Developer
           </p>
           <img
-            src={trozoPapel1}
+            src={paper1}
             alt=""
             className="
           shadow-(--shadow-post-it)
@@ -150,7 +150,7 @@ export default function Home() {
           />
         </div>
         <img
-          src={decor11}
+          src={decor2}
           alt=""
           className="
           absolute
@@ -160,7 +160,7 @@ export default function Home() {
           -rotate-3"
         />
         <img
-          src={decor2}
+          src={decor1}
           alt=""
           className="
         absolute

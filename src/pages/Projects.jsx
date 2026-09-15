@@ -1,10 +1,10 @@
 import { projects } from "../data/projects";
-import texturaFolder from "../assets/images/accesories/textura-beige.webp";
-import paperProjects from "../assets/images/accesories/papel-acuarela-projects.jpg";
 import { motion } from "motion/react";
 import ProjectItem from "../components/ProjectItem";
-import decor6 from "../assets/images/accesories/decor-6.png";
-import decor7 from "../assets/images/accesories/decor-7.png";
+import texturaFolder from "../assets/images/accesories/textura-beige.webp";
+import paperProjects from "../assets/images/accesories/paper-projects.jpg";
+import decor12 from "../assets/images/accesories/decor-12.png";
+import decor11 from "../assets/images/accesories/decor-11.png";
 
 function Projects() {
   return (
@@ -59,7 +59,7 @@ function Projects() {
           ))}
         </div>
         <img
-          src={decor7}
+          src={decor11}
           alt=""
           className="
         w-50
@@ -69,7 +69,7 @@ function Projects() {
         rotate-30"
         />
         <img
-          src={decor6}
+          src={decor12}
           alt=""
           className="
         w-60

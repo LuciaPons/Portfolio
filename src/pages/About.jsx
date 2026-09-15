@@ -1,16 +1,14 @@
-import texturaFolder from "../assets/images/accesories/textura-beige.webp";
-import paperAbout from "../assets/images/accesories/papel-beige-doblado-1.jpg";
-import papelRayas from "../assets/images/accesories/papel-rayas.jpg";
-import clip4 from "../assets/images/accesories/clip-4.png";
-import clip1 from "../assets/images/accesories/clip-1.webp";
-import acuarelas from "../assets/images/accesories/img-acuarelas.jpg";
-import paper15 from "../assets/images/accesories/trozo-papel-15.png";
-/* import paper11 from "../assets/images/accesories/trozo-papel-11.png"; */
-/* import decor8 from "../assets/images/accesories/decor-8.png"; */
-import stamp3 from "../assets/images/accesories/stamp-3.png";
-import stamp5 from "../assets/images/accesories/stamp-5.png";
 import { motion } from "motion/react";
 import { useState, useEffect } from "react";
+import texturaFolder from "../assets/images/accesories/textura-beige.webp";
+import paperAbout from "../assets/images/accesories/paper-about.jpg";
+import paper5 from "../assets/images/accesories/paper-5.jpg";
+import paper6 from "../assets/images/accesories/paper-6.png";
+import paper7 from "../assets/images/accesories/paper-7.jpg";
+import clip1 from "../assets/images/accesories/clip-1.webp";
+import clip3 from "../assets/images/accesories/clip-3.png";
+import decor7 from "../assets/images/accesories/decor-7.png";
+import decor8 from "../assets/images/accesories/decor-8.png";
 
 function About() {
   const [position, setPosition] = useState(0);
@@ -64,20 +62,9 @@ function About() {
         rotate-2
         shadow-(--shadow-paper)"
         />
-
-        {/* <img
-          src={paper11}
-          alt=""
-          className="
-            absolute
-            top-70 left-60
-          w-90 h-90
-          opacity-85
-          -rotate-10"
-        /> */}
         <span className="group">
           <img
-            src={paper15}
+            src={paper6}
             alt=""
             className="
             absolute
@@ -87,7 +74,7 @@ function About() {
           group-hover:-rotate-80"
           />
           <img
-            src={acuarelas}
+            src={paper5}
             alt=""
             className="
             absolute
@@ -107,16 +94,6 @@ function About() {
           -rotate-95"
           />
         </span>
-        {/* <img
-          src={decor8}
-          alt=""
-          className="
-            absolute
-            top-40 left-70
-          w-25 h-25
-          opacity-85
-          -rotate-16"
-        /> */}
         <div
           className="
           absolute
@@ -124,7 +101,7 @@ function About() {
           w-200 h-300"
         >
           <img
-            src={clip4}
+            src={clip3}
             alt=""
             className="
           absolute
@@ -134,7 +111,7 @@ function About() {
           rotate-2"
           />
           <img
-            src={stamp3}
+            src={decor7}
             alt=""
             className="
           absolute
@@ -144,7 +121,7 @@ function About() {
           rotate-16"
           />
           <img
-            src={stamp5}
+            src={decor8}
             alt=""
             className="
           absolute
@@ -154,7 +131,7 @@ function About() {
           -rotate-25"
           />
           <img
-            src={papelRayas}
+            src={paper7}
             alt=""
             className="
           absolute
@@ -194,32 +171,6 @@ function About() {
                 |
               </motion.span>
             </p>
-
-            {/* <p
-              className="
-              indent-4
-              pb-2"
-            >
-              Soy desarrolladora Frontend con experiencia en la creación de
-              aplicaciones web con React. Trabajo con JavaScript, React Router,
-              Context API y Firebase para desarrollar interfaces dinámicas y
-              funcionales.
-            </p>
-            <p
-              className="
-            indent-4
-            pb-2"
-            >
-              Desarrollé un e-commerce completo con autenticación de usuarios,
-              gestión de carrito y filtrado de productos, aplicando buenas
-              prácticas y organización de código. Busco seguir creciendo en el
-              desarrollo frontend y aportar en proyectos reales.
-            </p>
-            <p className="indent-4">
-              Enfocada en seguir mejorando mis habilidades, crecer
-              profesionalmente dentro del desarrollo web e interesada en
-              oportunidades donde pueda aportar y seguir aprendiendo en equipo.
-            </p> */}
           </div>
         </div>
       </motion.div>

@@ -5,17 +5,17 @@ import { tools } from "../data/tools";
 import { languages } from "../data/languages";
 import { courses } from "../data/education";
 import texturaFolder from "../assets/images/accesories/textura-beige.webp";
-import paperEducation from "../assets/images/accesories/papel-azul.jpg";
-import flecha from "../assets/images/accesories/flecha.png";
-import trozoPapel4 from "../assets/images/accesories/trozo-papel-4.png";
-import trozoPapel9 from "../assets/images/accesories/trozo-papel-9.png";
-import trozoPapel8 from "../assets/images/accesories/trozo-papel-8.png";
-import stamp2 from "../assets/images/accesories/stamp-3.png";
-import stamp3 from "../assets/images/accesories/stamp-5.png";
-import stamp4 from "../assets/images/accesories/stamp-4.png";
-import decor1 from "../assets/images/accesories/decor-1.png";
-import decor2 from "../assets/images/accesories/decor-4.png";
-import decor3 from "../assets/images/accesories/decor-5.png";
+import paperEducation from "../assets/images/accesories/paper-education.jpg";
+import decor4 from "../assets/images/accesories/decor-4.png";
+import paper2 from "../assets/images/accesories/paper-2.png";
+import paper3 from "../assets/images/accesories/paper-3.png";
+import paper4 from "../assets/images/accesories/paper-4.png";
+import decor5 from "../assets/images/accesories/decor-5.png";
+import decor6 from "../assets/images/accesories/decor-6.png";
+import decor7 from "../assets/images/accesories/decor-7.png";
+import decor8 from "../assets/images/accesories/decor-8.png";
+import decor9 from "../assets/images/accesories/decor-9.png";
+import decor10 from "../assets/images/accesories/decor-10.png";
 
 function Education() {
   const [activePage, setActivePage] = useState(true);
@@ -62,7 +62,7 @@ function Education() {
         onClick={handleClick}
       >
         <img
-          src={flecha}
+          src={decor4}
           alt=""
           className="
         w-30 h-15
@@ -80,7 +80,7 @@ function Education() {
         onClick={handleClick}
       >
         <img
-          src={flecha}
+          src={decor4}
           alt=""
           className="
         w-30 h-15
@@ -99,7 +99,6 @@ function Education() {
           absolute
           inset-0
           w-full h-full
-          
         `}
           initial={false}
           animate={{
@@ -142,7 +141,7 @@ function Education() {
               * Habilidades Técnicas
             </h2>
             <img
-              src={decor3}
+              src={decor6}
               alt=""
               className="
               absolute
@@ -150,7 +149,7 @@ function Education() {
               w-75 h-7"
             />
             <img
-              src={decor2}
+              src={decor5}
               alt=""
               className="
               absolute
@@ -169,7 +168,7 @@ function Education() {
                 "
             >
               <img
-                src={trozoPapel4}
+                src={paper2}
                 alt=""
                 className="
                   w-100 h-100
@@ -214,7 +213,7 @@ function Education() {
                     rounded-full
                     transition-all duration-300
                     group-hover:scale-125
-                    group-hover:shadow-[0_0_6px_rgba(164,93,68,0.8),0_0_12px_rgba(164,93,68,0.6)]"
+                    group-hover:shadow-(--glow-bullet-points)"
                     />
                     <img
                       src={skill.icon}
@@ -235,7 +234,7 @@ function Education() {
                 rotate-2"
             >
               <img
-                src={trozoPapel9}
+                src={paper3}
                 alt=""
                 className="
                 w-120 h-90"
@@ -285,7 +284,7 @@ function Education() {
                         rounded-full
                         transition-all duration-300
                         group-hover:scale-125
-                        group-hover:shadow-[0_0_6px_rgba(164,93,68,0.8),0_0_12px_rgba(164,93,68,0.6)]"
+                        group-hover:shadow-(--glow-bullet-points)"
                     />
                     <img
                       src={tool.icon}
@@ -305,14 +304,14 @@ function Education() {
                 -rotate-10"
             >
               <img
-                src={trozoPapel8}
+                src={paper4}
                 alt=""
                 className="
                 w-100 h-100
                 shadow-(--shadow-side-post-it)"
               />
               <img
-                src={stamp2}
+                src={decor7}
                 alt=""
                 className="
               absolute
@@ -361,7 +360,7 @@ function Education() {
                         rounded-full
                         transition-all duration-300
                         group-hover:scale-125
-                        group-hover:shadow-[0_0_6px_rgba(164,93,68,0.8),0_0_12px_rgba(164,93,68,0.6)]"
+                        group-hover:shadow-(--glow-bullet-points)"
                     />
                     <img
                       src={language.icon}
@@ -414,7 +413,7 @@ function Education() {
             w-full h-full"
           >
             <img
-              src={stamp3}
+              src={decor8}
               alt=""
               className="
               absolute
@@ -424,7 +423,7 @@ function Education() {
               z-40"
             />
             <img
-              src={stamp4}
+              src={decor9}
               alt=""
               className="
               absolute
@@ -434,7 +433,7 @@ function Education() {
               z-40"
             />
             <img
-              src={decor1}
+              src={decor10}
               alt=""
               className="
               absolute
@@ -455,7 +454,7 @@ function Education() {
                 className="
                 text-start 
                 mt-8 ml-40
-                text-lg sm:text-2xl md:text-3xl
+                text-3xl
                 text-(--color-text-dark) 
                 font-mono"
               >
