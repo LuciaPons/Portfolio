@@ -240,27 +240,32 @@ function Education() {
                 className="
                 w-120 h-90"
               />
+              <h4
+                className="
+                absolute
+                top-14 left-20
+                pb-4 px-8
+                text-lg
+                font-heading
+                font-semibold
+                text-(--color-text-dark)
+                italic"
+              >
+                Librerías / Herramientas
+              </h4>
               <ul
                 className="
                   absolute
-                  top-6 left-20
+                  top-6 left-18
                   group
-                  flex-1
-                  w-auto h-auto
-                  m-2 md:m-6
-                  py-4
+                  grid grid-cols-2
+                  w-80 h-60
+                  m-6
+                  pt-10
                   font-heading
                   font-semibold
                   text-(--color-text-dark)"
               >
-                <h4
-                  className="
-                    pb-4 px-8
-                    text-lg
-                    italic"
-                >
-                  Herramientas
-                </h4>
                 {tools.map((tool) => (
                   <li
                     key={tool.name}
@@ -268,7 +273,8 @@ function Education() {
                       group
                       relative 
                       flex items-center
-                      gap-4 mb-4 ml-2
+                      gap-3
+                      text-sm
                       transition"
                   >
                     <span
