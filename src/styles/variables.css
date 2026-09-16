@@ -23,6 +23,7 @@
   /*Shadows*/
   --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.12);
   --shadow-folder: 0 -14px 16px -1px rgba(0, 0, 0, 0.1);
+  --shadow-folder-mobile: -14px 0 16px -1px rgba(0, 0, 0, 0.1);
   --shadow-paper: 2px 2px 28px rgb(0 0 0 /0.12);
   --shadow-photo: 0 18px 35px rgb(0 0 0 /0.18);
   --shadow-post-it: 4px 50px 38px rgb(0 0 0 /0.18);
@@ -37,10 +38,14 @@
 
   /*Heights*/
   --navbar-height: 100px;
+  --navbar-width: 100px;
   --folder-step: 10px;
   --tab-step: 250px;
+  --tab-step-mobile: 50px;
   --folder-body-height: 30px;
+  --folder-body-height-mobile: 15px;
   --folder-tab-height: 40px;
+  --sidebar-row-height: 20dvh;
 
   /*Spacing*/
   --space-xs: 0.25rem;

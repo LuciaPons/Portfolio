@@ -19,9 +19,14 @@ export default function FolderNavigation() {
     <nav
       className="
         relative
-        h-(--navbar-height)
         bg-(bg-page)
-        mt-2
+        w-(--navbar-width)
+        h-full
+        shrink-0
+
+        md:w-full
+        md:h-(--navbar-height)
+        md:mt-2
       "
     >
       {navigation.map((tab, index) => {

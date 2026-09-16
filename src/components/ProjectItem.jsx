@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import fondo1 from "../assets/img/Fondo-1.jpeg";
-import pin1 from "../assets/images/accesories/pin-1.png";
+import clip2 from "../assets/images/accesories/clip-2.png";
 
 export default function ProjectItem({ project }) {
   return (
@@ -11,7 +11,7 @@ export default function ProjectItem({ project }) {
     hover:scale-101"
     >
       <img
-        src={pin1}
+        src={clip2}
         alt=""
         className="
         absolute
