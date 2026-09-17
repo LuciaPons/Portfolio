@@ -53,7 +53,14 @@ function Education() {
       <button
         className="
       relative
-      top-50 left-0
+      top-70
+      left-8
+
+      md:top-50 
+      md:left-6
+
+      xl:top-50 
+      xl:left-0
       rotate-180
       z-30
       cursor-pointer
@@ -65,14 +72,28 @@ function Education() {
           src={decor4}
           alt=""
           className="
-        w-30 h-15
+          w-15
+          h-10
+
+          md:w-20
+          md:h-10
+        
+          xl:w-30 
+          xl:h-15
         -rotate-12"
         />
       </button>
       <button
         className="
       relative
-      top-50 left-320
+      hidden
+
+      md:block
+      md:top-50 
+      md:left-234
+
+      xl:top-50 
+      xl:left-320
       z-30
       cursor-pointer
       transition-all duration-300
@@ -83,7 +104,11 @@ function Education() {
           src={decor4}
           alt=""
           className="
-        w-30 h-15
+          md:w-20
+          md:h-10
+        
+          xl:w-30 
+          xl:h-15
         -rotate-8"
         />
       </button>
@@ -131,11 +156,21 @@ function Education() {
             <h2
               className="
             absolute
-            top-20 left-170
+            top-12
+            left-18
+            text-base
+            
+            md:top-18
+            md:left-100
+            md:text-xl
+
+            xl:top-20 
+            xl:left-170
+            xl:text-2xl 
+            
             font-mono
             font-semibold
             text-(--color-text-vivid)
-            text-2xl 
             drop-shadow-lg"
             >
               * Habilidades Técnicas
@@ -145,24 +180,60 @@ function Education() {
               alt=""
               className="
               absolute
-              top-27 left-170
-              w-75 h-7"
+              top-18 
+              left-18
+              w-45 
+              h-4
+
+              md:top-26 
+              md:left-100
+              md:w-55 
+              md:h-5
+
+              xl:top-27 
+              xl:left-170
+              xl:w-75 
+              xl:h-7"
             />
             <img
               src={decor5}
               alt=""
               className="
               absolute
-              top-100 left-20
+              w-25
+              h-30
+              top-150
+              left-10
+
+              md:w-40
+              md:h-45
+              md:top-80
+              md:left-14
+
+              xl:top-100 
+              xl:left-20
+              xl:w-50 
+              xl:h-55
               opacity-70
-              w-50 h-55
               rotate-12"
             />
             <div
               className="
                 absolute
-                top-14 left-34
-                w-100 h-100
+                w-60
+                h-60
+                top-22
+                left-24
+                
+                md:top-20
+                md:left-28
+                md:w-80
+                md:h-80
+
+                xl:top-14 
+                xl:left-34
+                xl:w-100 
+                xl:h-100
                 rotate-4
                 z-10
                 "
@@ -171,17 +242,32 @@ function Education() {
                 src={paper2}
                 alt=""
                 className="
-                  w-100 h-100
-                  shadow-(--shadow-post-it)"
+                w-60
+                h-60
+
+                md:w-80 
+                md:h-80
+                
+                xl:w-100 
+                xl:h-100
+                shadow-(--shadow-post-it)"
               />
               <ul
                 className="
                   absolute
-                  top-23 left-25
                   group
                   flex-1
                   w-auto h-auto
-                  m-2 md:m-4
+                  top-10
+                  left-14
+
+                  md:top-12
+                  md:left-20
+
+                  xl:top-23 
+                  xl:left-25
+                  
+                  m-1 md:m-4
                   py-4
                   font-body
                   text-(--color-text-vivid)"
@@ -189,7 +275,9 @@ function Education() {
                 <h4
                   className="
                     pb-4 px-8
-                    text-lg
+                    text-base
+
+                    md:text-lg
                     "
                 >
                   Tecnologías
@@ -201,15 +289,22 @@ function Education() {
                       group
                       relative 
                       flex items-center 
-                      gap-4 mb-4 ml-2
-                      transition"
+                      gap-2
+                      md:gap-4 
+                      md:mb-4 
+                      mb-2
+                      ml-2
+                      transition
+                      text-sm
+
+                      md:text-lg"
                   >
                     <span
                       className="
                     absolute 
                     -left-5
                     w-2 h-2
-                    bg-(--color-3)
+                    bg-(--color-text-vivid)
                     rounded-full
                     transition-all duration-300
                     group-hover:scale-125
@@ -229,22 +324,50 @@ function Education() {
             <div
               className="
                 absolute
-                bottom-2 left-130
-                w-120 h-90
+                bottom-80 
+                left-12
+                w-70 
+                h-40
+                
+                md:bottom-2 
+                md:left-85
+                md:w-110 
+                md:h-80
+                
+                xl:bottom-2 
+                xl:left-130
+                xl:w-120 
+                xl:h-90
                 rotate-2"
             >
               <img
                 src={paper3}
                 alt=""
                 className="
-                w-120 h-90"
+                w-70 
+                h-50
+
+                md:w-100 
+                md:h-80
+                
+                xl:w-120 
+                xl:h-90"
               />
               <h4
                 className="
                 absolute
-                top-14 left-20
-                pb-4 px-8
-                text-lg
+                top-8
+                left-10
+                pb-2
+                px-4
+
+                md:top-14 
+                md:left-20
+                md:pb-4 
+                md:px-8
+                
+                text-sm
+                md:text-lg
                 font-heading
                 font-semibold
                 text-(--color-text-dark)
@@ -255,11 +378,23 @@ function Education() {
               <ul
                 className="
                   absolute
-                  top-6 left-18
                   group
                   grid grid-cols-2
-                  w-80 h-60
-                  m-6
+                  top-1
+                  left-10
+                  w-50
+                  h-40
+                  m-3
+                  
+                  md:top-6 
+                  md:left-12
+                  md:w-80 
+                  md:h-60
+                  md:m-4
+
+                  xl:m-6
+                  xl:left-18
+                  
                   pt-10
                   font-heading
                   font-semibold
@@ -273,14 +408,15 @@ function Education() {
                       relative 
                       flex items-center
                       gap-3
-                      text-sm
+                      text-xs
+                      md:text-base
                       transition"
                   >
                     <span
                       className="
                         absolute -left-5
                         w-2 h-2
-                        bg-(--color-3)
+                        bg-(--color-text-vivid)
                         rounded-full
                         transition-all duration-300
                         group-hover:scale-125
@@ -289,7 +425,12 @@ function Education() {
                     <img
                       src={tool.icon}
                       alt={tool.name}
-                      className="w-6 h-6 opacity-80"
+                      className="
+                      w-5
+                      h-5
+                      md:w-6 
+                      md:h-6 
+                      opacity-80"
                     />
                     <span>{tool.name}</span>
                   </li>
@@ -299,15 +440,34 @@ function Education() {
             <div
               className="
                 absolute
-                top-25 right-36
-                w-100 h-100
+                top-130
+                right-1
+                w-55
+                h-55
+
+                md:top-18
+                md:right-20
+                md:w-75
+                md:h-75
+
+                xl:top-25 
+                xl:right-36
+                xl:w-100 
+                xl:h-100
                 -rotate-10"
             >
               <img
                 src={paper4}
                 alt=""
                 className="
-                w-100 h-100
+                w-55
+                h-55
+                
+                md:w-80
+                md:h-80
+
+                xl:w-100 
+                xl:h-100
                 shadow-(--shadow-side-post-it)"
               />
               <img
@@ -315,14 +475,33 @@ function Education() {
                 alt=""
                 className="
               absolute
-              top-1 left-80
-              w-25 h-25
+              top-4
+              left-42
+              w-12 
+              h-12
+              
+              md:top-0
+              md:left-60
+              md:w-20 
+              md:h-20
+
+              xl:top-1 
+              xl:left-80
+              xl:w-25 
+              xl:h-25
               rotate-14"
               />
               <ul
                 className="
                   absolute
-                  top-12 left-20
+                  top-4 
+                  left-8
+
+                  md:top-10 
+                  md:left-12
+
+                  xl:top-12 
+                  xl:left-20
                   group
                   flex-1
                   w-auto h-auto
@@ -334,9 +513,12 @@ function Education() {
                 <h4
                   className="
                     pb-6
-                    text-xl
                     font-semibold
-                    text-(--color-text-light)"
+                    text-(--color-text-light)
+                    text-base
+
+                    md:text-xl
+                    "
                 >
                   Idiomas
                 </h4>
@@ -347,9 +529,12 @@ function Education() {
                       group
                       relative 
                       flex items-center
-                      gap-4 mb-6 ml-2
+                      gap-4 
+                      mb-2
+                      md:mb-6 
+                      ml-2
                       text-(--color-text-light)
-                      font-medium
+                      text-medium
                       transition"
                   >
                     <span
@@ -417,8 +602,20 @@ function Education() {
               alt=""
               className="
               absolute
-              top-14 left-24
-              w-25 h-25
+              top-14 
+              left-10
+              w-15
+              h-15
+
+              md:top-14 
+              md:left-25
+              md:w-20 
+              md:h-20
+              
+              xl:top-14 
+              xl:left-24
+              xl:w-25 
+              xl:h-25
               rotate-24
               z-40"
             />
@@ -427,9 +624,20 @@ function Education() {
               alt=""
               className="
               absolute
-              bottom-8 right-24
-              w-45 h-20
-              -rotate-34
+              w-35 
+              h-10
+              bottom-30
+              right-2
+              
+              md:w-45 
+              md:h-20
+              md:bottom-14
+              md:right-30
+              md:-rotate-30
+
+              xl:bottom-8 
+              xl:right-24
+              xl:-rotate-34
               z-40"
             />
             <img
@@ -437,24 +645,49 @@ function Education() {
               alt=""
               className="
               absolute
-              top-90 left-14
-              w-45 h-65
+              top-150
+              left-8
+              w-25
+              h-40
+
+              md:top-110 
+              md:left-18
+              md:w-35 
+              md:h-55
+              
+              xl:top-90 
+              xl:left-14
+              xl:w-45 
+              xl:h-65
               -rotate-24
               z-40"
             />
             <div
               className="
               absolute
-              top-20 left-40
-              w-[80%] h-[80%]
+              top-15 
+              left-15
+              w-[80%]
+              h-[90%]
+
+              md:left-30
+              md:w-[80%] 
+              md:h-[80%]
+
+              xl:left-40
+
               bg-(--color-4)/70
               rounded-xl"
             >
               <h3
                 className="
                 text-start 
-                mt-8 ml-40
-                text-3xl
+                ml-20
+                mt-8 
+                text-xl
+                
+                md:ml-40
+                md:text-3xl
                 text-(--color-text-dark) 
                 font-mono"
               >
@@ -462,14 +695,20 @@ function Education() {
               </h3>
               <div
                 className="
-              flex flex-row
+              flex
+              flex-col 
+              md:flex-row
               justify-center"
               >
                 <ul
                   className="
                   text-(--color-text-dark)
                   w-full h-full
-                  mt-10 mx-10
+                  mt-2
+                  mx-8
+
+                  md:mt-10 
+                  md:mx-10
                   font-mono"
                 >
                   {courses.map((course) => {
@@ -482,7 +721,10 @@ function Education() {
                         border-b border-white/10 
                         rounded-lg 
                         px-4 
-                        py-3 md:py-4 lg:py-5 xl:py-3
+                        py-2 
+                        md:py-4 
+                        lg:py-5 
+                        xl:py-3
                         transition
                         hover:bg-white/20
                         m-2 lg:m-4 xl:m-2
@@ -493,12 +735,13 @@ function Education() {
                           aria-expanded={isOpen}
                           aria-controls={`course-${course.name}`}
                           className="
-                          w-full 
+                          w-[80%]
+                          md:w-full 
                           flex justify-between items-center text-left"
                         >
                           <div
                             id={`course-${course.name}`}
-                            className="font-sm md:font-md"
+                            className="text-xs md:text-base"
                           >
                             {course.name}
                           </div>
@@ -515,7 +758,12 @@ function Education() {
                           overflow-hidden transition-all duration-300 ease-in-out
                           ${isOpen ? "h-auto opacity-100 mt-2" : "max-h-0 opacity-0"}`}
                         >
-                          <div className="text-sm opacity-80 translate-y-1">
+                          <div
+                            className="
+                          text-xs md:text-sm
+                          opacity-80 
+                          translate-y-1"
+                          >
                             <p>{course.institute}</p>
                             <p>Fecha: {course.date}</p>
                             <a
@@ -535,23 +783,32 @@ function Education() {
                 </ul>
                 <div
                   className="
-                mx-10
-                font-body"
+                  mx-6
+                  md:mx-10
+                  font-body"
                 >
                   <h4
                     className="
                     text-(--color-base)
                     text-center
-                    font-semibold
-                    text-base md:text-lg lg:text-xl
-                    mt-2 mb-8"
+                    text-xs
+                    mb-4
+
+                    md:font-semibold
+                    md:text-lg 
+                    md:mb-8
+                    lg:text-xl
+                    mt-2 
+                    "
                   >
                     Experiencia previa a la programación
                   </h4>
                   <p
                     className="
-                    text-(--color-base)
-                    text-sm/6 md:text-base/7 lg:text-lg/8
+                    text-(--color-text-light)
+                    text-xs/5 
+                    md:text-base/7
+                    lg:text-lg/8
                     text-justify"
                   >
                     Antes de enfocarme en el desarrollo web, trabajé durante 9
