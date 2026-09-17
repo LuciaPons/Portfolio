@@ -47,7 +47,9 @@ export default function Home() {
         top-8 left-15
         w-[95%] h-full
         object-fit
-        rotate-2
+        -rotate-2
+
+        md:rotate-2
         shadow-(--shadow-paper)"
         />
         <img
@@ -58,7 +60,9 @@ export default function Home() {
         top-8 left-10
         w-[95%] h-full
         object-fit
-        -rotate-2
+        
+        rotate-2
+        md:-rotate-2
         shadow-(--shadow-paper)"
         />
         <img
@@ -66,16 +70,38 @@ export default function Home() {
           alt=""
           className="
           absolute
-          bottom-125 right-75
           z-40
-          w-35 h-25
+          bottom-180
+          right-20
+          w-30 h-20
+          
+          md:w-35 
+          md:h-25
+          md:bottom-141
+          md:right-60
+          
+          xl:bottom-125 
+          xl:right-75
           "
         />
         <div
           className="
         absolute
-        top-10 right-70
-        w-80 h-150
+        top-10
+        right-14
+        w-50 
+        h-80
+        
+        md:w-70 
+        md:h-110
+        md:top-8
+        md:right-45
+
+        xl:w-80 
+        xl:h-150
+        xl:top-10 
+        xl:right-70
+        
         cursor-pointer"
           onClick={() => setTopPhoto((prev) => (prev === 1 ? 2 : 1))}
         >
@@ -85,7 +111,14 @@ export default function Home() {
             className={`
             absolute
             inset-0
-            w-80 h-120
+            w-50 
+            h-80
+
+            md:w-70 
+            md:h-110
+
+            xl:w-80 
+            xl:h-120
             shadow-(--shadow-photo)
             ${topPhoto === 1 ? "z-20 -rotate-4" : "z-10 -rotate-3"}`}
           />
@@ -95,7 +128,15 @@ export default function Home() {
             className={`
             absolute
             inset-0
-            w-80 h-120
+            w-50 
+            h-80
+              
+            md:w-70 
+            md:h-110
+
+            xl:w-80 
+            xl:h-120
+
             shadow-(--shadow-photo)
             ${topPhoto === 2 ? "z-20 rotate-3" : "z-10 rotate-8"}`}
           />
@@ -105,39 +146,76 @@ export default function Home() {
           alt=""
           className="
           absolute
-          top-6 right-12
-          w-70 h-70
+          top-10
+          right-36
+          w-40
+          h-40
+          rotate-260
+
+          md:top-8
+          xl:top-6 
+          md:right-12
+
+          md:w-50 
+          md:h-50
+
+          xl:w-70 
+          xl:h-70
           opacity-70
-          -rotate-4"
+          md:-rotate-4"
         />
         <div
           className="
         relative
-        top-20 left-80
+        top-106
+        left-32
         w-90 h-400
-        rotate-2
+        -rotate-2
+
+        md:top-25 
+        md:left-35
+
+        xl:top-20 
+        xl:left-80
+
+        md:rotate-2
         z-10
         cursor-default"
         >
           <p
             className="
             absolute
-            top-56 left-22
+            top-30
+            left-10
             font-heading
             font-semibold
-            text-3xl
-            text-(--color-text-dark)"
+            text-(--color-text-dark)
+            text-xl
+            
+            md:top-50
+            md:left-22
+            md:text-3xl
+            
+            xl:top-56"
           >
             Lucía Pons
           </p>
           <p
             className="
           absolute
-          top-72 left-18
+          top-40
+          left-7
           font-heading
           font-semibold
-          text-2xl
-          text-(--color-text-dark)"
+          text-(--color-text-dark)
+          text-medium
+          
+          md:top-65
+          md:left-12
+          md:text-2xl
+          
+          xl:top-72 
+          "
           >
             Frontend Developer
           </p>
@@ -146,6 +224,9 @@ export default function Home() {
             alt=""
             className="
           shadow-(--shadow-post-it)
+          w-50
+          md:w-80
+          xl:w-auto
           "
           />
         </div>
@@ -154,8 +235,21 @@ export default function Home() {
           alt=""
           className="
           absolute
-          top-22 left-70
-          w-110 h-110
+          top-106
+          left-15
+          w-70
+          h-70
+
+          md:top-28
+          md:left-28
+          md:w-100
+          md:h-100
+
+          xl:left-70
+          xl:top-22 
+          xl:w-110 
+          xl:h-110
+          
           opacity-90
           -rotate-3"
         />
@@ -164,8 +258,21 @@ export default function Home() {
           alt=""
           className="
         absolute
-        top-80 left-40
-        w-50 h-75
+        top-140
+        left-8
+        w-30
+        h-45
+        
+        md:top-80
+        md:left-10
+        md:w-40 
+        md:h-65
+
+        xl:top-80 
+        xl:left-40
+        xl:w-50 
+        xl:h-75
+
         -rotate-20
         hover:-translate-y-2"
         />
