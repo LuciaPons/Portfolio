@@ -12,7 +12,7 @@ function Projects() {
       className="
       h-full
       bg-(--color-folder-3)
-      overflow-hidden"
+      md:overflow-hidden"
     >
       <div
         className="
@@ -38,8 +38,16 @@ function Projects() {
           alt=""
           className="
         absolute
-        top-8 left-10
-        w-[95%] h-full
+        top-2
+        w-full
+        h-[95%]
+        
+        md:top-8 
+        md:left-6
+        md:w-[95%] 
+        md:h-full
+        
+        xl:left-10
         opacity-70
         object-fit
         shadow-(--shadow-paper)"
@@ -47,12 +55,21 @@ function Projects() {
         <div
           className="
           relative
-          w-full h-full
           top-4
-        flex flex-col lg:flex-row
-        justify-center items-center
-        gap-4 
-        z-10"
+          w-full 
+          h-full
+
+          md:h-[90%]
+          md:top-4
+          xl:h-full
+          
+          flex 
+          flex-col 
+          md:flex-row
+          md:justify-center 
+          items-center
+          gap-4 
+          z-10"
         >
           {projects.map((project) => (
             <ProjectItem key={project.id} project={project} />
@@ -62,22 +79,37 @@ function Projects() {
           src={decor11}
           alt=""
           className="
-        w-50
-        h-50
+          top-3
+          left-1
+          w-25
+          h-25
+
+          md:top-9 
+          md:left-10
+          md:w-40
+          md:h-40
+
+          xl:w-50
+          xl:h-50
         absolute
-        top-9 left-10
         rotate-30"
         />
         <img
           src={decor12}
           alt=""
           className="
-        w-60
-        h-80
-        absolute
-        bottom-0 right-10
-        opacity-70
-        rotate-2"
+          bottom-2
+          right-2
+          w-40
+          h-60
+          
+          md:right-10
+          md:bottom-0 
+          md:w-60
+          md:h-80
+          absolute
+          opacity-70
+          rotate-2"
         />
       </motion.div>
     </section>
