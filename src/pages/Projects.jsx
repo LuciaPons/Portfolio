@@ -40,7 +40,7 @@ function Projects() {
         absolute
         top-2
         w-full
-        h-[95%]
+        h-full
         
         md:top-8 
         md:left-6
@@ -98,7 +98,7 @@ function Projects() {
           src={decor12}
           alt=""
           className="
-          bottom-2
+          bottom-0
           right-2
           w-40
           h-60

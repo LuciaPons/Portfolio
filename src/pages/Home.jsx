@@ -71,16 +71,16 @@ export default function Home() {
           className="
           absolute
           z-40
-          bottom-180
+          top-3
           right-20
           w-30 h-20
           
           md:w-35 
           md:h-25
-          md:bottom-141
+          md:top-1
           md:right-60
           
-          xl:bottom-125 
+          xl:-top-1 
           xl:right-75
           "
         />

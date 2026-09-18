@@ -324,10 +324,10 @@ function Education() {
             <div
               className="
                 absolute
-                bottom-80 
                 left-12
                 w-70 
                 h-40
+                bottom-60 
                 
                 md:bottom-2 
                 md:left-85

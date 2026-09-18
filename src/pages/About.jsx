@@ -74,19 +74,19 @@ function About() {
             alt=""
             className="
             absolute
-            bottom-145 
+            top-10 
             left-10
             w-100 
             h-50
             rotate-4
 
-            md:bottom-50 
+            md:top-50 
             md:-left-14
             md:w-120 
             md:h-70
             md:-rotate-85
             
-            xl:bottom-20 
+            xl:top-40 
             xl:-left-14
             xl:w-140 
             xl:h-90
@@ -117,20 +117,20 @@ function About() {
             alt=""
             className="
           absolute
-          bottom-184 
+          top-6 
           left-40
           w-20 
           h-15
           rotate-6
           
-          md:bottom-80 
+          md:top-80 
           md:-left-3
           md:w-30 
           md:h-15
           md:-rotate-95
           
-          xl:bottom-30 
-          xl:-left-8
+          xl:top-55 
+          xl:-left-5
           xl:w-40 
           xl:h-25
           z-10"
@@ -178,7 +178,7 @@ function About() {
             alt=""
             className="
           absolute
-          top-25
+          top-30
           right-10
           w-10
           h-10
@@ -224,10 +224,10 @@ function About() {
             alt=""
             className="
           absolute
-          top-20
+          top-30
           right-1
           w-100
-          h-[80%]
+          h-[85%]
           
           md:top-12 
           md:right-4 
@@ -239,7 +239,7 @@ function About() {
             className="
             w-full
           absolute
-          top-28
+          top-36
           right-10
           text-xs
           px-2

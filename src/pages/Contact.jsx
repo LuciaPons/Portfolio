@@ -72,10 +72,10 @@ function Contact() {
             alt=""
             className="
             absolute
-            top-10 
+            top-15 
             -right-2
-            w-120 
-            h-150
+            w-full 
+            h-110
             -rotate-1
 
             md:top-18 
@@ -101,7 +101,7 @@ function Contact() {
             top-70 
             left-4
             w-full 
-            h-130
+            h-110
 
             md:top-10 
             md:left-2
@@ -119,7 +119,7 @@ function Contact() {
           <div
             className="
           absolute
-          top-82 
+          top-79 
           left-8
           pl-2
 
