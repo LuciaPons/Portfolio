@@ -5,10 +5,10 @@ import paperHome from "../assets/images/accesories/paper-home.webp";
 import polaroid1 from "../assets/images/accesories/polaroid-1.webp";
 import polaroid2 from "../assets/images/accesories/polaroid-2.webp";
 import clip1 from "../assets/images/accesories/clip-1.webp";
-import paper1 from "../assets/images/accesories/paper-1.png";
-import decor1 from "../assets/images/accesories/decor-1.png";
-import decor2 from "../assets/images/accesories/decor-2.png";
-import decor3 from "../assets/images/accesories/decor-3.png";
+import paper1 from "../assets/images/accesories/paper-1.webp";
+import decor1 from "../assets/images/accesories/decor-1.webp";
+import decor2 from "../assets/images/accesories/decor-2.webp";
+import decor3 from "../assets/images/accesories/decor-3.webp";
 
 export default function Home() {
   const [topPhoto, setTopPhoto] = useState(1);

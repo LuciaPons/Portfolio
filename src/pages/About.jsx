@@ -1,14 +1,14 @@
 import { motion } from "motion/react";
 import { useState, useEffect } from "react";
 import texturaFolder from "../assets/images/accesories/textura-beige.webp";
-import paperAbout from "../assets/images/accesories/paper-about.jpg";
-import paper5 from "../assets/images/accesories/paper-5.jpg";
-import paper6 from "../assets/images/accesories/paper-6.png";
-import paper7 from "../assets/images/accesories/paper-7.jpg";
+import paperAbout from "../assets/images/accesories/paper-about.webp";
+import paper5 from "../assets/images/accesories/paper-5.webp";
+import paper6 from "../assets/images/accesories/paper-6.webp";
+import paper7 from "../assets/images/accesories/paper-7.webp";
 import clip1 from "../assets/images/accesories/clip-1.webp";
-import clip3 from "../assets/images/accesories/clip-3.png";
-import decor7 from "../assets/images/accesories/decor-7.png";
-import decor8 from "../assets/images/accesories/decor-8.png";
+import clip3 from "../assets/images/accesories/clip-3.webp";
+import decor7 from "../assets/images/accesories/decor-7.webp";
+import decor8 from "../assets/images/accesories/decor-8.webp";
 
 function About() {
   const [position, setPosition] = useState(0);

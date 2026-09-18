@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 import { contacts } from "../data/contacts";
 import texturaFolder from "../assets/images/accesories/textura-beige.webp";
-import paper8 from "../assets/images/accesories/paper-8.png";
-import paper9 from "../assets/images/accesories/paper-9.png";
+import paper8 from "../assets/images/accesories/paper-8.webp";
+import paper9 from "../assets/images/accesories/paper-9.webp";
 
 function Contact() {
   return (

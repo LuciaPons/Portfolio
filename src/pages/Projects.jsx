@@ -2,9 +2,9 @@ import { projects } from "../data/projects";
 import { motion } from "motion/react";
 import ProjectItem from "../components/ProjectItem";
 import texturaFolder from "../assets/images/accesories/textura-beige.webp";
-import paperProjects from "../assets/images/accesories/paper-projects.jpg";
-import decor12 from "../assets/images/accesories/decor-12.png";
-import decor11 from "../assets/images/accesories/decor-11.png";
+import paperProjects from "../assets/images/accesories/paper-projects.webp";
+import decor12 from "../assets/images/accesories/decor-12.webp";
+import decor11 from "../assets/images/accesories/decor-11.webp";
 
 function Projects() {
   return (

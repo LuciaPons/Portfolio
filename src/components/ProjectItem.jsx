@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import fondo1 from "../assets/img/Fondo-1.jpeg";
-import clip2 from "../assets/images/accesories/clip-2.png";
+import fondo1 from "../assets/images/accesories/Fondo-1.webp";
+import clip2 from "../assets/images/accesories/clip-2.webp";
 import { useState } from "react";
 
 export default function ProjectItem({ project }) {

@@ -5,17 +5,17 @@ import { tools } from "../data/tools";
 import { languages } from "../data/languages";
 import { courses } from "../data/education";
 import texturaFolder from "../assets/images/accesories/textura-beige.webp";
-import paperEducation from "../assets/images/accesories/paper-education.jpg";
-import decor4 from "../assets/images/accesories/decor-4.png";
-import paper2 from "../assets/images/accesories/paper-2.png";
-import paper3 from "../assets/images/accesories/paper-3.png";
-import paper4 from "../assets/images/accesories/paper-4.png";
-import decor5 from "../assets/images/accesories/decor-5.png";
-import decor6 from "../assets/images/accesories/decor-6.png";
-import decor7 from "../assets/images/accesories/decor-7.png";
-import decor8 from "../assets/images/accesories/decor-8.png";
-import decor9 from "../assets/images/accesories/decor-9.png";
-import decor10 from "../assets/images/accesories/decor-10.png";
+import paperEducation from "../assets/images/accesories/paper-education.webp";
+import decor4 from "../assets/images/accesories/decor-4.webp";
+import paper2 from "../assets/images/accesories/paper-2.webp";
+import paper3 from "../assets/images/accesories/paper-3.webp";
+import paper4 from "../assets/images/accesories/paper-4.webp";
+import decor5 from "../assets/images/accesories/decor-5.webp";
+import decor6 from "../assets/images/accesories/decor-6.webp";
+import decor7 from "../assets/images/accesories/decor-7.webp";
+import decor8 from "../assets/images/accesories/decor-8.webp";
+import decor9 from "../assets/images/accesories/decor-9.webp";
+import decor10 from "../assets/images/accesories/decor-10.webp";
 
 function Education() {
   const [activePage, setActivePage] = useState(true);
