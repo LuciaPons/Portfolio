@@ -29,8 +29,8 @@ function About() {
     <section
       className="
       h-full
-        bg-(--color-folder-4)
-        overflow-hidden"
+      bg-(--color-folder-4)
+      overflow-hidden"
     >
       <div
         className="
@@ -56,8 +56,14 @@ function About() {
           alt=""
           className="
         absolute
-        top-9 left-8
-        w-[97%] h-full
+        top-9 
+        left-6
+
+        md:left-8
+        md:w-[95%]
+
+        xl:w-[97%] 
+        h-full
         object-fit
         rotate-2
         shadow-(--shadow-paper)"
@@ -68,18 +74,41 @@ function About() {
             alt=""
             className="
             absolute
-            bottom-20 -left-14
-          w-140 h-90
-          -rotate-85
-          group-hover:-rotate-80"
+            bottom-145 
+            left-10
+            w-100 
+            h-50
+            rotate-4
+
+            md:bottom-50 
+            md:-left-14
+            md:w-120 
+            md:h-70
+            md:-rotate-85
+            
+            xl:bottom-20 
+            xl:-left-14
+            xl:w-140 
+            xl:h-90
+            group-hover:-rotate-80"
           />
           <img
             src={paper5}
             alt=""
             className="
+            hidden
+            md:block
             absolute
-            bottom-30 -left-8
-          w-90 h-60
+            
+            md:bottom-60 
+            md:-left-6
+            md:w-80 
+            md:h-50
+
+            xl:bottom-30 
+            xl:-left-8
+            xl:w-90 
+            xl:h-60
           -rotate-85
           group-hover:-rotate-90"
           />
@@ -88,35 +117,81 @@ function About() {
             alt=""
             className="
           absolute
-          bottom-30 -left-8
-          w-40 h-25
-          z-10
-          -rotate-95"
+          bottom-184 
+          left-40
+          w-20 
+          h-15
+          rotate-6
+          
+          md:bottom-80 
+          md:-left-3
+          md:w-30 
+          md:h-15
+          md:-rotate-95
+          
+          xl:bottom-30 
+          xl:-left-8
+          xl:w-40 
+          xl:h-25
+          z-10"
           />
         </span>
         <div
           className="
           absolute
-          top-0 right-10
-          w-200 h-300"
+          top-0 
+          -right-10
+          w-full
+          h-full
+
+          md:right-2
+          md:w-150
+          md:h-250
+          
+          xl:right-10
+          xl:w-200 
+          xl:h-300"
         >
           <img
             src={clip3}
             alt=""
             className="
           absolute
-          -top-2 right-90
-          w-40 h-25
-          z-10
-          rotate-2"
+          top-80
+          right-64
+          w-30
+          h-20
+          -rotate-94
+          
+          md:w-40 
+          md:h-25
+          md:-top-2
+          md:right-50
+          md:rotate-2
+
+          xl:-top-2 
+          xl:right-90
+          z-10"
           />
           <img
             src={decor7}
             alt=""
             className="
           absolute
-          top-124 right-20
-          w-20 h-20
+          top-25
+          right-10
+          w-10
+          h-10
+
+          md:top-130
+          md:right-10
+          md:w-15
+          md:h-15
+          
+          xl:top-124 
+          xl:right-20
+          xl:w-20 
+          xl:h-20
           z-10
           rotate-16"
           />
@@ -124,9 +199,23 @@ function About() {
             src={decor8}
             alt=""
             className="
-          absolute
-          top-18 right-190
-          w-15 h-15
+            hidden
+            md:block
+            absolute
+          top-20
+          right-140
+          w-10 
+          h-10
+
+          md:top-20
+          md:right-140
+          md:w-10 
+          md:h-10
+
+          xl:top-18 
+          xl:right-190
+          xl:w-15 
+          xl:h-15
           z-10
           -rotate-25"
           />
@@ -135,16 +224,36 @@ function About() {
             alt=""
             className="
           absolute
-          top-12 right-4 
-          w-200 h-300
+          top-20
+          right-1
+          w-100
+          h-[80%]
+          
+          md:top-12 
+          md:right-4 
+          md:w-200 
+          md:h-300
           -rotate-2"
           />
           <div
             className="
             w-full
           absolute
-          top-34 right-20
-          px-14
+          top-28
+          right-10
+          text-xs
+          px-2
+
+          md:top-35 
+          md:right-20
+          md:text-sm
+          md:px-10
+
+          xl:top-34 
+          xl:right-20
+          xl:text-base
+          xl:px-14
+          
           font-mono
           text-(--color-text-vivid)
           text-start
