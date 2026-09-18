@@ -93,7 +93,8 @@ function Education() {
       md:left-234
 
       xl:top-50 
-      xl:left-320
+      xl:left-345
+
       z-30
       cursor-pointer
       transition-all duration-300
@@ -626,8 +627,9 @@ function Education() {
               absolute
               w-35 
               h-10
-              bottom-30
-              right-2
+              bottom-2
+              -right-8
+              -rotate-18
               
               md:w-45 
               md:h-20
@@ -645,7 +647,7 @@ function Education() {
               alt=""
               className="
               absolute
-              top-150
+              top-155
               left-8
               w-25
               h-40
@@ -668,7 +670,7 @@ function Education() {
               top-15 
               left-15
               w-[80%]
-              h-[90%]
+              h-[95%]
 
               md:left-30
               md:w-[80%] 
@@ -755,12 +757,14 @@ function Education() {
                         </button>
                         <div
                           className={`
-                          overflow-hidden transition-all duration-300 ease-in-out
-                          ${isOpen ? "h-auto opacity-100 mt-2" : "max-h-0 opacity-0"}`}
+                           
+                          overflow-hidden transition-all duration-300 ease-in-out z-30
+                          ${isOpen ? "min-h-20 opacity-100 mt-1 md:mt-2" : "max-h-0 opacity-0"}`}
                         >
                           <div
                             className="
-                          text-xs md:text-sm
+                          text-xs 
+                          md:text-sm
                           opacity-80 
                           translate-y-1"
                           >
@@ -783,7 +787,7 @@ function Education() {
                 </ul>
                 <div
                   className="
-                  mx-6
+                  mx-4
                   md:mx-10
                   font-body"
                 >
