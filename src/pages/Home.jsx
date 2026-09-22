@@ -214,7 +214,8 @@ export default function Home() {
           md:left-12
           md:text-2xl
           
-          xl:top-72 
+          xl:top-72
+          xl:left-15 
           "
           >
             Frontend Developer
