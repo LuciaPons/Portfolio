@@ -118,7 +118,7 @@ export default function Home() {
         >
           <img
             src={polaroid1}
-            alt=""
+            alt="foto de Lucía Pons"
             className={`
             absolute
             inset-0
@@ -195,7 +195,7 @@ export default function Home() {
         z-10
         cursor-default"
         >
-          <p
+          <h1
             className="
             absolute
             top-30
@@ -212,7 +212,7 @@ export default function Home() {
             xl:top-56"
           >
             Lucía Pons
-          </p>
+          </h1>
           <p
             className="
           absolute

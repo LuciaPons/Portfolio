@@ -48,6 +48,7 @@ function Contact() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
+        <h1 className="sr-only">Contacto</h1>
         <div
           className="
         absolute
@@ -154,7 +155,7 @@ function Contact() {
           />
           <img
             src={decor14}
-            alt=""
+            alt="Imagen de logo personal"
             className="
           absolute
           top-112 

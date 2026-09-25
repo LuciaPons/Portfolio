@@ -79,6 +79,7 @@ function About() {
         rotate-2
         shadow-(--shadow-paper)"
         />
+        <h1 className="sr-only">Acerca de mí</h1>
         <span className="group">
           <img
             src={paper6}

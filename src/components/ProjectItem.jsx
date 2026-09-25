@@ -61,7 +61,7 @@ export default function ProjectItem({ project }) {
         <a href={project.linkUrl} target="_blank">
           <img
             src={project.img}
-            alt={project.name}
+            alt={project.alt}
             className="
             w-full h-full 
             object-cover
@@ -267,6 +267,7 @@ ProjectItem.propTypes = {
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
     rotate: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     tecnologies: PropTypes.string.isRequired,

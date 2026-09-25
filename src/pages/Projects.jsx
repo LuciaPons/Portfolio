@@ -64,6 +64,7 @@ function Projects() {
         object-fit
         shadow-(--shadow-paper)"
         />
+        <h1 className="sr-only">Proyectos</h1>
         <div
           className="
           relative

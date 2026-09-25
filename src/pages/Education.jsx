@@ -203,7 +203,7 @@ function Education() {
               xl:top-18
               xl:left-150"
             >
-              <h2
+              <h1
                 className="
                 text-base
               
@@ -216,7 +216,7 @@ function Education() {
                 cursor-default"
               >
                 * Habilidades Técnicas
-              </h2>
+              </h1>
               <motion.img
                 ref={scope}
                 src={decor6}
@@ -310,7 +310,7 @@ function Education() {
                   font-body
                   text-(--color-text-vivid)"
               >
-                <h4
+                <h3
                   className="
                     pb-4 px-8
                     text-base
@@ -319,7 +319,7 @@ function Education() {
                     "
                 >
                   Tecnologías
-                </h4>
+                </h3>
                 {skills.map((skill) => (
                   <li
                     key={skill.name}
@@ -392,7 +392,7 @@ function Education() {
                 xl:w-120 
                 xl:h-90"
               />
-              <h4
+              <h3
                 className="
                 absolute
                 top-8
@@ -413,7 +413,7 @@ function Education() {
                 italic"
               >
                 Librerías / Herramientas
-              </h4>
+              </h3>
               <ul
                 className="
                   absolute
@@ -550,7 +550,7 @@ function Education() {
                   rotate-3
                   font-body"
               >
-                <h4
+                <h3
                   className="
                     pb-6
                     font-semibold
@@ -561,7 +561,7 @@ function Education() {
                     "
                 >
                   Idiomas
-                </h4>
+                </h3>
                 {languages.map((language) => (
                   <li
                     key={language.name}
@@ -721,7 +721,7 @@ function Education() {
               bg-(--color-4)/70
               rounded-xl"
             >
-              <h3
+              <h2
                 className="
                 text-start 
                 ml-20
@@ -735,7 +735,7 @@ function Education() {
                 cursor-default"
               >
                 EDUCACIÓN
-              </h3>
+              </h2>
               <div
                 className="
               flex

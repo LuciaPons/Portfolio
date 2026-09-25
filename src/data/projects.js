@@ -9,6 +9,7 @@ export const projects = [
     id: 1,
     name: "Portfolio web - Proyecto para cliente",
     img: portfolioRodrigo,
+    alt: "Vista de portfolio web de Rodrigo Pons",
     rotate: "2deg",
     description:
       "Aplicación desarrollada con React y Tailwind CSS, utilizando React Router y Motion para navegación, componentes e interacciones. Implementación de SEO técnico y adaptación de la interfaz a distintos dispositivos.",
@@ -21,6 +22,7 @@ export const projects = [
     id: 2,
     name: "Labsistente - Aplicación para técnicos en Anatomía Patológica",
     img: labsistente,
+    alt: "Vista de aplicación para Técnicos en Anatomía Patológica",
     rotate: "-3deg",
     description:
       "Aplicación web mobile-first desarrollada con React para asistir en el troubleshooting de tinciones H&E. Implementación de API/backend e integración con Gemini, manejo de estados, errores y respuestas.",
@@ -34,6 +36,7 @@ export const projects = [
     id: 3,
     name: "Zona Límite - E-commerce",
     img: zonaLimite,
+    alt: "Vista de demo de tienda online Zona Límite",
     rotate: "4deg",
     description:
       "Aplicación demo desarrollado con React y Firebase, que incluye autenticación de usuarios, gestión de carrito y filtrado dinámico de productos. Implementa manejo de estado y navegación con React Router.",
