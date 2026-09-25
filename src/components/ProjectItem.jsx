@@ -58,22 +58,26 @@ export default function ProjectItem({ project }) {
           rotate: project.rotate,
         }}
       >
-        <img
-          src={project.img}
-          alt={project.name}
-          className="
+        <a href={project.linkUrl} target="_blank">
+          <img
+            src={project.img}
+            alt={project.name}
+            className="
             w-full h-full 
             object-cover
             opacity-70"
-        />
-        <div
-          className="
+          />
+          <div
+            className="
           absolute inset-0
           bg-linear-to-t from-white/70 to-transparent"
-        />
+          />
+        </a>
       </div>
       <div
         className="
+        flex flex-col
+        justify-between
         w-60
         h-30
 
@@ -110,7 +114,8 @@ export default function ProjectItem({ project }) {
         mb-3
         font-mono
         text-(--color-text-dark)
-        opacity-90"
+        opacity-90
+        cursor-default"
         >
           {project.name}
         </h3>
@@ -120,7 +125,8 @@ export default function ProjectItem({ project }) {
         md:block
         md:text-sm 
         text-(--color-text-dark) 
-        opacity-90"
+        opacity-90
+        cursor-default"
         >
           {project.description}
         </p>
@@ -189,7 +195,8 @@ export default function ProjectItem({ project }) {
         flex  
         justify-between
         items-center
-        pt-2"
+        pt-2
+        cursor-default"
         >
           <p
             className="
@@ -250,15 +257,6 @@ export default function ProjectItem({ project }) {
             </a>
           </div>
         </div>
-        <p
-          className="
-        text-xs 
-        italic 
-        text-zinc-800
-        opacity-60"
-        >
-          Deployado en producción
-        </p>
       </div>
     </div>
   );

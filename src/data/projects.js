@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     id: 2,
-    name: "Labsistente - Demo para técnicos en Anatomía Patológica",
+    name: "Labsistente - Aplicación para técnicos en Anatomía Patológica",
     img: labsistente,
     rotate: "-3deg",
     description:
@@ -32,11 +32,11 @@ export const projects = [
   },
   {
     id: 3,
-    name: "Zona Límite - Demo e-commerce",
+    name: "Zona Límite - E-commerce",
     img: zonaLimite,
     rotate: "4deg",
     description:
-      "Aplicación desarrollado con React y Firebase, que incluye autenticación de usuarios, gestión de carrito y filtrado dinámico de productos. Implementa manejo de estado y navegación con React Router.",
+      "Aplicación demo desarrollado con React y Firebase, que incluye autenticación de usuarios, gestión de carrito y filtrado dinámico de productos. Implementa manejo de estado y navegación con React Router.",
     tecnologies: "React . Context API . Firebase",
     linkUrl: "https://proyectoreact-sand.vercel.app/",
     linkIcon: linkIcon,

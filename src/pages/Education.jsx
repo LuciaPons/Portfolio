@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion, useAnimate } from "motion/react";
 import { useState } from "react";
 import { skills } from "../data/skills";
 import { tools } from "../data/tools";
@@ -28,6 +28,26 @@ function Education() {
 
   const toggleCourse = (courseName) => {
     setActiveCourse((prev) => (prev === courseName ? null : courseName));
+  };
+
+  const [scope, animate] = useAnimate();
+
+  const handleMouseEnter = async () => {
+    await animate(
+      scope.current,
+      { clipPath: "inset(0 100% 0 0)" },
+      { duration: 0.1 },
+    );
+
+    await animate(
+      scope.current,
+      { clipPath: "inset(0 0% 0 0)" },
+      { duration: 0.9, ease: "easeInOut" },
+    );
+  };
+
+  const handleMouseLeave = () => {
+    animate(scope.current, { clipPath: "inset(0 0% 0 0)" }, { duration: 0 });
   };
 
   return (
@@ -65,7 +85,7 @@ function Education() {
       z-30
       cursor-pointer
       transition-all duration-300
-      hover:scale-107"
+      "
         onClick={handleClick}
       >
         <img
@@ -80,7 +100,8 @@ function Education() {
         
           xl:w-30 
           xl:h-15
-        -rotate-12"
+        -rotate-12
+        hover:-rotate-2"
         />
       </button>
       <button
@@ -97,8 +118,7 @@ function Education() {
 
       z-30
       cursor-pointer
-      transition-all duration-300
-      hover:scale-107"
+      "
         onClick={handleClick}
       >
         <img
@@ -110,7 +130,8 @@ function Education() {
         
           xl:w-30 
           xl:h-15
-        -rotate-8"
+        -rotate-8
+        hover:rotate-8"
         />
       </button>
       <motion.div
@@ -154,48 +175,52 @@ function Education() {
             relative
             w-full h-full"
           >
-            <h2
-              className="
-            absolute
-            top-12
-            left-18
-            text-base
-            
-            md:top-18
-            md:left-100
-            md:text-xl
-
-            xl:top-20 
-            xl:left-170
-            xl:text-2xl 
-            
-            font-mono
-            font-semibold
-            text-(--color-text-vivid)
-            drop-shadow-lg"
-            >
-              * Habilidades Técnicas
-            </h2>
-            <img
-              src={decor6}
-              alt=""
+            <div
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
               className="
               absolute
-              top-18 
-              left-18
-              w-45 
-              h-4
-
-              md:top-26 
+              w-90
+              h-20
+              flex flex-col
+              top-12
+              left-15
+              
+              md:top-15
               md:left-100
-              md:w-55 
-              md:h-5
 
-              xl:top-27 
-              xl:left-170
-              xl:w-75 
-              xl:h-7"
-            />
+              xl:top-18
+              xl:left-150"
+            >
+              <h2
+                className="
+                text-base
+              
+                md:text-xl
+                
+                font-mono
+                font-semibold
+                text-(--color-text-vivid)
+                drop-shadow-lg
+                cursor-default"
+              >
+                * Habilidades Técnicas
+              </h2>
+              <motion.img
+                ref={scope}
+                src={decor6}
+                alt=""
+                className="
+                w-45 
+                h-4
+           
+                md:w-55 
+                md:h-5
+
+                xl:w-75 
+                xl:h-7"
+              />
+            </div>
             <img
               src={decor5}
               alt=""
@@ -213,10 +238,11 @@ function Education() {
 
               xl:top-100 
               xl:left-20
-              xl:w-50 
-              xl:h-55
+              xl:w-45 
+              xl:h-50
               opacity-70
-              rotate-12"
+              rotate-12
+              hover:rotate-8"
             />
             <div
               className="
@@ -237,7 +263,7 @@ function Education() {
                 xl:h-100
                 rotate-4
                 z-10
-                "
+                cursor-default"
             >
               <img
                 src={paper2}
@@ -339,7 +365,8 @@ function Education() {
                 xl:left-130
                 xl:w-120 
                 xl:h-90
-                rotate-2"
+                rotate-2
+                cursor-default"
             >
               <img
                 src={paper3}
@@ -455,7 +482,8 @@ function Education() {
                 xl:right-36
                 xl:w-100 
                 xl:h-100
-                -rotate-10"
+                -rotate-10
+                cursor-default"
             >
               <img
                 src={paper4}
@@ -662,7 +690,8 @@ function Education() {
               xl:w-45 
               xl:h-65
               -rotate-24
-              z-40"
+              z-40
+              hover:translate-y-2"
             />
             <div
               className="
@@ -691,7 +720,8 @@ function Education() {
                 md:ml-40
                 md:text-3xl
                 text-(--color-text-dark) 
-                font-mono"
+                font-mono
+                cursor-default"
               >
                 EDUCACIÓN
               </h3>
@@ -700,7 +730,8 @@ function Education() {
               flex
               flex-col 
               md:flex-row
-              justify-center"
+              justify-center
+              "
               >
                 <ul
                   className="
@@ -711,7 +742,8 @@ function Education() {
 
                   md:mt-10 
                   md:mx-10
-                  font-mono"
+                  font-mono
+                  "
                 >
                   {courses.map((course) => {
                     const isOpen = activeCourse === course.name;
@@ -730,7 +762,7 @@ function Education() {
                         transition
                         hover:bg-white/20
                         m-2 lg:m-4 xl:m-2
-                        "
+                        cursor-pointer"
                       >
                         <button
                           onClick={() => toggleCourse(course.name)}
@@ -739,7 +771,8 @@ function Education() {
                           className="
                           w-[80%]
                           md:w-full 
-                          flex justify-between items-center text-left"
+                          flex justify-between items-center text-left
+                          cursor-pointer"
                         >
                           <div
                             id={`course-${course.name}`}
@@ -789,7 +822,8 @@ function Education() {
                   className="
                   mx-4
                   md:mx-10
-                  font-body"
+                  font-body
+                  cursor-default"
                 >
                   <h4
                     className="

@@ -20,7 +20,7 @@ function About() {
     if (position < text.length) {
       const timer = setTimeout(() => {
         setPosition((prevPosition) => prevPosition + 1);
-      }, 50);
+      }, 6);
       return () => clearTimeout(timer);
     }
   }, [position]);
@@ -90,7 +90,7 @@ function About() {
             xl:-left-14
             xl:w-140 
             xl:h-90
-            group-hover:-rotate-80"
+            md:group-hover:-rotate-80"
           />
           <img
             src={paper5}
@@ -106,7 +106,7 @@ function About() {
             md:h-50
 
             xl:bottom-30 
-            xl:-left-8
+            xl:-left-7
             xl:w-90 
             xl:h-60
           -rotate-85
@@ -193,7 +193,8 @@ function About() {
           xl:w-20 
           xl:h-20
           z-10
-          rotate-16"
+          rotate-16
+          hover:rotate-4"
           />
           <img
             src={decor8}
@@ -217,7 +218,8 @@ function About() {
           xl:w-15 
           xl:h-15
           z-10
-          -rotate-25"
+          -rotate-25
+          hover:-rotate-10"
           />
           <img
             src={paper7}
@@ -271,7 +273,7 @@ function About() {
               <motion.span
                 animate={{ opacity: [0, 1] }}
                 transition={{
-                  duration: 0.4,
+                  duration: 0.8,
                   repeat: Infinity,
                   repeatType: "reverse",
                   ease: "easeInOut",

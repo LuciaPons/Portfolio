@@ -116,6 +116,7 @@ export default function Home() {
 
             md:w-70 
             md:h-110
+            md:hover:-rotate-2
 
             xl:w-80 
             xl:h-120
@@ -133,6 +134,7 @@ export default function Home() {
               
             md:w-70 
             md:h-110
+            md:hover:rotate-1
 
             xl:w-80 
             xl:h-120

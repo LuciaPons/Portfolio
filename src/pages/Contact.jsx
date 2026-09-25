@@ -3,6 +3,8 @@ import { contacts } from "../data/contacts";
 import texturaFolder from "../assets/images/accesories/textura-beige.webp";
 import paper8 from "../assets/images/accesories/paper-8.webp";
 import paper9 from "../assets/images/accesories/paper-9.webp";
+import decor13 from "../assets/images/accesories/decor-13.webp";
+import decor14 from "../assets/images/accesories/decor-14.webp";
 
 function Contact() {
   return (
@@ -74,7 +76,7 @@ function Contact() {
             absolute
             top-15 
             -right-2
-            w-full 
+            w-100 
             h-110
             -rotate-1
 
@@ -100,12 +102,12 @@ function Contact() {
             absolute
             top-70 
             left-4
-            w-full 
+            w-100 
             h-110
 
             md:top-10 
             md:left-2
-            md:w-170 
+            md:w-160 
             md:h-200
 
             xl:top-6 
@@ -115,6 +117,50 @@ function Contact() {
             object-fit
             rotate-2
             shadow-(--shadow-paper)"
+          />
+          <img
+            src={decor13}
+            alt=""
+            className="
+          absolute
+          top-104 
+          left-48
+          w-13 
+          h-8
+          rotate-6
+          
+          md:top-70 
+          md:left-100
+          md:w-20 
+          md:h-15
+          md:hover:-rotate-10
+          
+          xl:top-95 
+          xl:left-165
+          xl:w-25 
+          xl:h-20"
+          />
+          <img
+            src={decor14}
+            alt=""
+            className="
+          absolute
+          top-112 
+          left-20
+          w-20 
+          h-20
+          opacity-85
+          
+          md:top-85 
+          md:left-35
+          md:w-40 
+          md:h-40
+          md:hover:rotate-4
+          
+          xl:top-115 
+          xl:left-70
+          xl:w-60 
+          xl:h-60"
           />
           <div
             className="
