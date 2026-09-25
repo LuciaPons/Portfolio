@@ -25,6 +25,17 @@ function About() {
     }
   }, [position]);
 
+  useEffect(() => {
+    document.title = "Sobre mí | Lucía Pons";
+
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute(
+        "content",
+        "Conocé más sobre mí, mi forma de trabajar y mi enfoque como desarrolladora frontend.",
+      );
+  }, []);
+
   return (
     <section
       className="

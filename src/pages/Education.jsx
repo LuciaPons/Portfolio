@@ -1,5 +1,5 @@
 import { motion, useAnimate } from "motion/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { skills } from "../data/skills";
 import { tools } from "../data/tools";
 import { languages } from "../data/languages";
@@ -49,6 +49,17 @@ function Education() {
   const handleMouseLeave = () => {
     animate(scope.current, { clipPath: "inset(0 0% 0 0)" }, { duration: 0 });
   };
+
+  useEffect(() => {
+    document.title = "Educación | Lucía Pons";
+
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute(
+        "content",
+        "Formación, habilidades y herramientas que utilizo como desarrolladora frontend.",
+      );
+  }, []);
 
   return (
     <section

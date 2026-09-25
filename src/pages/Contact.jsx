@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { contacts } from "../data/contacts";
+import { useEffect } from "react";
 import texturaFolder from "../assets/images/accesories/textura-beige.webp";
 import paper8 from "../assets/images/accesories/paper-8.webp";
 import paper9 from "../assets/images/accesories/paper-9.webp";
@@ -7,6 +8,17 @@ import decor13 from "../assets/images/accesories/decor-13.webp";
 import decor14 from "../assets/images/accesories/decor-14.webp";
 
 function Contact() {
+  useEffect(() => {
+    document.title = "Contacto | Lucía Pons";
+
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute(
+        "content",
+        "Ponete en contacto conmigo para hablar sobre proyectos, oportunidades de trabajo o colaboraciones.",
+      );
+  }, []);
+
   return (
     <section
       className="

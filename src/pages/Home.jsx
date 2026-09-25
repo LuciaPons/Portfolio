@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import texturaFolder from "../assets/images/accesories/textura-beige.webp";
 import paperHome from "../assets/images/accesories/paper-home.webp";
@@ -12,6 +12,17 @@ import decor3 from "../assets/images/accesories/decor-3.webp";
 
 export default function Home() {
   const [topPhoto, setTopPhoto] = useState(1);
+
+  useEffect(() => {
+    document.title = "Lucía Pons | Frontend Developer";
+
+    document
+      .querySelector('meta[name="description')
+      ?.setAttribute(
+        "content",
+        "Portfolio de Lucía Pons, desarrolladora frontend especializada en React, JavaScript, Tailwind CSS y Motion",
+      );
+  }, []);
 
   return (
     <section
