@@ -1,4 +1,4 @@
-import FolderNavigation from "../components/navigation/FolderNavigation";
+import FolderNavigation from "../components/Navigation/FolderNavigation";
 import { Outlet } from "react-router-dom";
 
 export default function MainLayout() {
