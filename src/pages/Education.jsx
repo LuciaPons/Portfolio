@@ -290,12 +290,11 @@ function Education() {
                 xl:h-100
                 shadow-(--shadow-post-it)"
               />
-              <ul
+              <h3
                 className="
-                  absolute
-                  group
-                  flex-1
-                  w-auto h-auto
+                absolute
+                  pb-4 px-8
+                  text-base
                   top-10
                   left-14
 
@@ -304,22 +303,35 @@ function Education() {
 
                   xl:top-23 
                   xl:left-25
+
+                  md:text-lg
+                  m-1 md:m-4
+                  py-4
+                  font-body
+                  text-(--color-text-vivid)"
+              >
+                Tecnologías
+              </h3>
+              <ul
+                className="
+                  absolute
+                  group
+                  flex-1
+                  w-auto h-auto
+                  top-18
+                  left-14
+
+                  md:top-20
+                  md:left-20
+
+                  xl:top-32 
+                  xl:left-25
                   
                   m-1 md:m-4
                   py-4
                   font-body
                   text-(--color-text-vivid)"
               >
-                <h3
-                  className="
-                    pb-4 px-8
-                    text-base
-
-                    md:text-lg
-                    "
-                >
-                  Tecnologías
-                </h3>
                 {skills.map((skill) => (
                   <li
                     key={skill.name}
@@ -531,9 +543,9 @@ function Education() {
               xl:h-25
               rotate-14"
               />
-              <ul
+              <h3
                 className="
-                  absolute
+                absolute
                   top-4 
                   left-8
 
@@ -541,6 +553,30 @@ function Education() {
                   md:left-12
 
                   xl:top-12 
+                  xl:left-20
+                  pb-6
+                  font-semibold
+                  text-(--color-text-light)
+                  text-base
+
+                  md:text-xl
+                  m-2 md:m-4
+                  py-4
+                  rotate-3
+                  font-body"
+              >
+                Idiomas
+              </h3>
+              <ul
+                className="
+                  absolute
+                  top-14 
+                  left-8
+
+                  md:top-20 
+                  md:left-12
+
+                  xl:top-25 
                   xl:left-20
                   group
                   flex-1
@@ -550,18 +586,6 @@ function Education() {
                   rotate-3
                   font-body"
               >
-                <h3
-                  className="
-                    pb-6
-                    font-semibold
-                    text-(--color-text-light)
-                    text-base
-
-                    md:text-xl
-                    "
-                >
-                  Idiomas
-                </h3>
                 {languages.map((language) => (
                   <li
                     key={language.name}
@@ -640,6 +664,7 @@ function Education() {
             <img
               src={decor8}
               alt=""
+              loading="lazy"
               className="
               absolute
               top-14 
@@ -662,6 +687,7 @@ function Education() {
             <img
               src={decor9}
               alt=""
+              loading="lazy"
               className="
               absolute
               w-35 
@@ -684,6 +710,7 @@ function Education() {
             <img
               src={decor10}
               alt=""
+              loading="lazy"
               className="
               absolute
               top-155

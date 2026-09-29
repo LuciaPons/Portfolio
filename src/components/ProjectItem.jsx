@@ -140,7 +140,7 @@ export default function ProjectItem({ project }) {
           <button
             onClick={() => toggleDescription(project.name)}
             aria-expanded={isOpen}
-            aria-controls={`course-${project.id}`}
+            aria-controls={`project-${project.id}`}
             className="
           w-full
           flex 
@@ -180,7 +180,7 @@ export default function ProjectItem({ project }) {
             }`}
           >
             <p
-              id={`course-${project.name}`}
+              id={`project-${project.name}`}
               className="
               text-xs
               text-(--color-text-dark) 
@@ -219,6 +219,7 @@ export default function ProjectItem({ project }) {
               href={project.linkUrl}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`Ver proyecto ${project.name}`}
               className="
             p-1 z-40
             rounded-lg
@@ -227,7 +228,6 @@ export default function ProjectItem({ project }) {
             >
               <img
                 src={project.linkIcon}
-                aria-label={`Ver proyecto ${project.name}`}
                 className="
                 w-5
                 h-5
@@ -239,6 +239,7 @@ export default function ProjectItem({ project }) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`Ver repositorio de ${project.name} en GitHub`}
               className="
             p-1 z-40
             rounded-lg
@@ -247,7 +248,6 @@ export default function ProjectItem({ project }) {
             >
               <img
                 src={project.githubIcon}
-                aria-label={`Ver repositorio de ${project.name} en GitHub`}
                 className="
                 w-5
                 h-5

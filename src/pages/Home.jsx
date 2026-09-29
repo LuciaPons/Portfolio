@@ -17,7 +17,7 @@ export default function Home() {
     document.title = "Lucía Pons | Frontend Developer";
 
     document
-      .querySelector('meta[name="description')
+      .querySelector('meta[name="description"]')
       ?.setAttribute(
         "content",
         "Portfolio de Lucía Pons, desarrolladora frontend especializada en React, JavaScript, Tailwind CSS y Motion",
@@ -119,6 +119,9 @@ export default function Home() {
           <img
             src={polaroid1}
             alt="foto de Lucía Pons"
+            width={951}
+            height={1426}
+            fetchPriority="high"
             className={`
             absolute
             inset-0
@@ -137,6 +140,8 @@ export default function Home() {
           <img
             src={polaroid2}
             alt=""
+            width={1075}
+            height={1616}
             className={`
             absolute
             inset-0
@@ -236,6 +241,8 @@ export default function Home() {
           <img
             src={paper1}
             alt=""
+            width={408}
+            height={613}
             className="
           shadow-(--shadow-post-it)
           w-50

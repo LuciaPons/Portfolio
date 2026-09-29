@@ -155,7 +155,7 @@ function Contact() {
           />
           <img
             src={decor14}
-            alt="Imagen de logo personal"
+            alt="Logo personal de Lucía Pons"
             className="
           absolute
           top-112 
