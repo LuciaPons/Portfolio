@@ -40,7 +40,7 @@ export default function FolderNavigation() {
           }
         }
 
-        const zIndex = 40 - visualIndex * 10;
+        const zIndex = 50 - visualIndex * 10;
 
         return (
           <NavigationItem

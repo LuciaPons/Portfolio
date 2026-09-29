@@ -73,7 +73,7 @@ function Education() {
         className="
       absolute
       inset-0
-      opacity-25
+      opacity-35
       pointer-events-none"
         style={{
           backgroundImage: `url(${texturaFolder})`,

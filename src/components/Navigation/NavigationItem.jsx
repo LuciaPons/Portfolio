@@ -113,7 +113,7 @@ export default function NavigationItem({
             className="
           absolute
           inset-0
-          opacity-25
+          opacity-35
           rounded-t-(--radius-folder)
           pointer-events-none"
             style={{
@@ -152,7 +152,7 @@ export default function NavigationItem({
             className="
           absolute
           inset-0
-          opacity-25
+          opacity-35
           pointer-events-none"
             style={{
               backgroundImage: `url(${texturaFolder})`,
