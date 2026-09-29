@@ -66,6 +66,7 @@ export default function Home() {
         <img
           src={paperHome}
           alt=""
+          fetchPriority="high"
           className="
         absolute
         top-8 left-10
@@ -121,7 +122,6 @@ export default function Home() {
             alt="foto de Lucía Pons"
             width={951}
             height={1426}
-            fetchPriority="high"
             className={`
             absolute
             inset-0
