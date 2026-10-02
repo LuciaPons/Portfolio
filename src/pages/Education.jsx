@@ -173,6 +173,7 @@ function Education() {
           <img
             src={paperEducation}
             alt=""
+            fetchPriority="high"
             className="
           absolute
           top-9 left-6
