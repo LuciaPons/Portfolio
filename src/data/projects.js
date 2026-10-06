@@ -1,6 +1,6 @@
 import zonaLimite from "../assets/images/projects/zonaLimite.webp";
-import portfolioRodrigo from "../assets/images/projects/portfolioRodrigo.png";
-import labsistente from "../assets/images/projects/labsistente.png";
+import portfolioRodrigo from "../assets/images/projects/portfolioRodrigo.webp";
+import labsistente from "../assets/images/projects/labsistente.webp";
 import linkIcon from "../assets/icons/icon-link.png";
 import github3Icon from "../assets/icons/icon-github-3.png";
 
