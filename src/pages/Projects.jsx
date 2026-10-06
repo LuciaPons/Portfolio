@@ -48,6 +48,7 @@ function Projects() {
         <img
           src={paperProjects}
           alt=""
+          fetchPriority="high"
           className="
         absolute
         top-2
