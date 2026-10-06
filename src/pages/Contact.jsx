@@ -111,6 +111,7 @@ function Contact() {
           <img
             src={paper8}
             alt=""
+            fetchPriority="high"
             className="
             absolute
             top-70 
