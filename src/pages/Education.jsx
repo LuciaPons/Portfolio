@@ -542,7 +542,8 @@ function Education() {
               xl:left-80
               xl:w-25 
               xl:h-25
-              rotate-14"
+              rotate-14
+              hover:rotate-24"
               />
               <h3
                 className="
@@ -683,6 +684,7 @@ function Education() {
               xl:w-25 
               xl:h-25
               rotate-24
+              md:hover:rotate-14
               z-40"
             />
             <img
@@ -706,6 +708,7 @@ function Education() {
               xl:bottom-8 
               xl:right-24
               xl:-rotate-34
+              md:hover:-translate-y-2
               z-40"
             />
             <img
