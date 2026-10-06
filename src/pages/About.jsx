@@ -65,6 +65,7 @@ function About() {
         <img
           src={paperAbout}
           alt=""
+          fetchPriority="high"
           className="
         absolute
         top-9 
