@@ -20,14 +20,16 @@ export default function NavigationItem({
   zIndex,
   isActive,
 }) {
-  const [y, setY] = useState(0);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     if (isActive) {
-      setY(400);
+      const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
+      setPosition(isMobile ? { x: 400, y: 0 } : { x: 0, y: 400 });
 
       requestAnimationFrame(() => {
-        setY(0);
+        setPosition({ x: 0, y: 0 });
       });
     }
   }, [isActive]);
@@ -53,9 +55,7 @@ export default function NavigationItem({
         "--visual-index": visualIndex,
         zIndex,
       }}
-      animate={{
-        y,
-      }}
+      animate={position}
       transition={{
         duration: 0.35,
         ease: "easeOut",
