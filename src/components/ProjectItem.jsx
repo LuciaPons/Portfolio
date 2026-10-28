@@ -205,7 +205,8 @@ export default function ProjectItem({ project }) {
             text-xs
             xl:text-sm
             font-mono
-            opacity-80"
+            opacity-80
+            md:max-w-65"
           >
             {project.tecnologies}
           </p>
@@ -231,8 +232,8 @@ export default function ProjectItem({ project }) {
                 className="
                 w-5
                 h-5
-                md:w-7 
-                md:h-7"
+                md:w-6 
+                md:h-6"
               />
             </a>
             <a
@@ -251,8 +252,8 @@ export default function ProjectItem({ project }) {
                 className="
                 w-5
                 h-5
-                md:w-7 
-                md:h-7"
+                md:w-6 
+                md:h-6"
               />
             </a>
           </div>

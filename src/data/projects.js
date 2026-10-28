@@ -1,4 +1,4 @@
-import zonaLimite from "../assets/images/projects/zonaLimite.webp";
+import habita from "../assets/images/projects/habita.webp";
 import portfolioRodrigo from "../assets/images/projects/portfolioRodrigo.webp";
 import labsistente from "../assets/images/projects/labsistente.webp";
 import linkIcon from "../assets/icons/icon-link.png";
@@ -34,16 +34,16 @@ export const projects = [
   },
   {
     id: 3,
-    name: "Zona Límite - E-commerce",
-    img: zonaLimite,
-    alt: "Vista de demo de tienda online Zona Límite",
+    name: "Habita - Aplicación de planificación de ahorro para vivienda",
+    img: habita,
+    alt: "Vista del panel principal de Habita para planificar y seguir el ahorro para vivienda",
     rotate: "4deg",
     description:
-      "Aplicación demo desarrollado con React y Firebase, que incluye autenticación de usuarios, gestión de carrito y filtrado dinámico de productos. Implementa manejo de estado y navegación con React Router.",
-    tecnologies: "React . Context API . Firebase",
-    linkUrl: "https://proyectoreact-sand.vercel.app/",
+      "Aplicación web desarrollada con React para planificar y hacer seguimiento del ahorro para vivienda. Incluye registro de aportes, visualización del progreso, historial, simulación de escenarios y autenticación con persistencia de datos en Firebase.",
+    tecnologies: "React . Tailwind CSS . Firebase . React Router",
+    linkUrl: "https://habita-zeta.vercel.app/bienvenida",
     linkIcon: linkIcon,
-    githubUrl: "https://github.com/LuciaPons/proyectoreact",
+    githubUrl: "https://github.com/LuciaPons/habita.git",
     githubIcon: github3Icon,
   },
 ];
